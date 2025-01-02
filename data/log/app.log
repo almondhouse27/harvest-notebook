@@ -1,0 +1,210 @@
+2025-01-01 20:55:09,560 - root - INFO - ======================================================
+2025-01-01 20:55:09,560 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:55:11,030 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:55:11,047 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:55:11,735 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:55:11,735 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:55:11,745 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:55:11,771 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 20:57:02,665 - root - INFO - ======================================================
+2025-01-01 20:57:02,665 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:57:04,187 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:57:04,203 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:57:04,898 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:57:04,898 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:57:04,907 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:57:04,937 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 20:57:23,975 - root - INFO - ======================================================
+2025-01-01 20:57:23,975 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:57:25,461 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:57:25,476 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:57:26,135 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:57:26,135 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:57:26,147 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:57:26,173 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 20:57:31,804 - root - INFO - ======================================================
+2025-01-01 20:57:31,804 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:57:33,300 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:57:33,312 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:57:33,988 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:57:33,988 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:57:34,001 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:57:34,028 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 20:58:11,739 - root - INFO - ======================================================
+2025-01-01 20:58:11,739 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:58:13,242 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:58:13,261 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:58:13,945 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:58:13,945 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:58:13,967 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:58:14,005 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 20:59:04,782 - root - INFO - ======================================================
+2025-01-01 20:59:04,783 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 20:59:06,306 - root - INFO - Dependencies installed successfully!
+2025-01-01 20:59:06,325 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 20:59:06,993 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 20:59:06,993 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 20:59:07,002 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 20:59:07,030 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
+2025-01-01 21:00:23,164 - root - INFO - ======================================================
+2025-01-01 21:00:23,164 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-01 21:00:24,664 - root - INFO - Dependencies installed successfully!
+2025-01-01 21:00:24,684 - root - INFO - Version fetched for python: Python 3.12.8
+2025-01-01 21:00:25,368 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+IPython          : 8.28.0
+ipykernel        : 6.29.5
+ipywidgets       : not installed
+jupyter_client   : 8.6.3
+jupyter_core     : 5.7.2
+jupyter_server   : not installed
+jupyterlab       : not installed
+nbclient         : not installed
+nbconvert        : not installed
+nbformat         : not installed
+notebook         : not installed
+qtconsole        : not installed
+traitlets        : 5.14.3
+2025-01-01 21:00:25,370 - root - INFO - Completed version retrieval for the stack.
+2025-01-01 21:00:25,380 - root - INFO - CSV file data\input\data.csv read successfully.
+2025-01-01 21:00:25,404 - root - INFO - Removed Rows with Missing URL:
+   Category                  Name                      Url
+  BoardGame     https://cmon.com/             CMON Limited
+   Computer                   PHP I love PHP and Composer!
+   Computer                NVIDIA                      NaN
+Synthesizer   Teenage Engineering                      NaN
+Synthesizer             Behringer                      NaN
+Synthesizer https://www.korg.com/                      NaN
+     Travel                Hilton  gttps://www.hilton.com/
+  VideoGame               BioWare  https//www.bioware.com/
