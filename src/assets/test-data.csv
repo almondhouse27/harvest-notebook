@@ -5,16 +5,16 @@ BoardGame,Stonemaier Games,https://stonemaiergames.com/
 BoardGame,The OP,https://www.theop.games/
 BoardGame,Fantasy Flight Games,https://www.fantasyflightgames.com/
 BoardGame,Renegade Game Studios,https://www.renegadegamestudios.com/
-BoardGame,https://cmon.com/,CMON Limited
+BoardGame,CMON Limited,https://cmon.com/
 BoardGame,Stronghold Games,https://strongholdgames.com/
 BoardGame,AEG,https://www.alderac.com/
 BoardGame,Gamewright,https://www.gamewright.com/
-,Python,https://www.python.org/
+BoardGame,Python,https://www.python.org/
 Computer,Jupyter,https://jupyter.org/
 Computer,Vue.js,https://vuejs.org/
 Computer,Node.js,https://nodejs.org/en
 Computer,Laravel,https://laravel.com/
-Computer,PHP,I love PHP and Composer!
+Computer,PHP,https://php.net/
 Computer,Packagist,https://packagist.org/
 Computer,MySQL,https://www.mysql.com/
 Computer,GitHub,https://github.com/
@@ -23,17 +23,17 @@ Computer,Dell,https://www.dell.com/
 Computer,HP,https://www.hp.com/
 Computer,Lenovo,https://www.lenovo.com/
 Computer,Apple,https://www.apple.com/
-,Asus,https://www.asus.com/
+Computer,Asus,https://www.asus.com/
 Computer,Acer,https://www.acer.com/
 Computer,MSI,https://www.msi.com/
 Computer,Intel,https://www.intel.com/
 Computer,AMD,https://www.amd.com/
-Computer,NVIDIA,
-Synthesizer,Teenage Engineering,
-Synthesizer,Behringer,
+Computer,NVIDIA,https://www.nvidia.com/en-us/
+Synthesizer,Teenage Engineering,https://teenage.engineering/
+Synthesizer,Behringer,https://www.behringer.com/
 Synthesizer,Moog,https://www.moogmusic.com/
 Synthesizer,Roland,https://www.roland.com/
-Synthesizer,https://www.korg.com/,
+Synthesizer,KORG,https://www.korg.com/
 Synthesizer,Yamaha,https://usa.yamaha.com/
 Synthesizer,Arturia,https://www.arturia.com/
 Synthesizer,,https://www.elektron.se/
@@ -43,7 +43,7 @@ VideoGame,Bethesda Game Studios,https://bethesda.net/
 VideoGame,Square Enix,https://www.square-enix.com/
 VideoGame,BioWare,https://www.bioware.com/
 VideoGame,Larian Studios,https://larian.com/
-VideoGame,,https://www.cdprojekt.com/
+VideoGame,CD Projekt,https://www.cdprojekt.com/
 VideoGame,Obsidian Entertainment,https://www.obsidian.net/
 VideoGame,FromSoftware,https://www.fromsoftware.jp/
 VideoGame,Monolith Soft,https://www.monolithsoft.co.jp/

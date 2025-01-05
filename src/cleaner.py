@@ -1,9 +1,9 @@
 import logging
-import re
 
-URL_CHECK = re.compile(r'^(https?://)?([a-z0-9]+([-\w]*[a-z0-9])*\.)+[a-z]{2,6}(:[0-9]{1,5})?(/.*)?$', re.IGNORECASE)
+""" Nested functions just because... """
 
-def handle_missing_data(df):
+
+def handle_missing_data(df, URL_CHECK):
 
     # @nestedFunctionStart
     def missing_summary():
@@ -25,11 +25,9 @@ def handle_missing_data(df):
         for column, missing in missing_per_column.items():
             print(f"{column:<15}: {missing}")
         print()
-        
-        
 
     # @nestedFunctionStart
-    def fix_missing_values(df):
+    def fix_missing_values(df, URL_CHECK):
 
         # removes rows with missing url value
         valid_url = df['Url'].notna() & df['Url'].apply(lambda x: bool(URL_CHECK.match(str(x))))
@@ -51,7 +49,7 @@ def handle_missing_data(df):
 
     # @parentFunctionStart
     missing_summary()
-    df, removed_input_rows = fix_missing_values(df)
+    df, removed_input_rows = fix_missing_values(df, URL_CHECK)
     missing_summary()
     return df, removed_input_rows
 

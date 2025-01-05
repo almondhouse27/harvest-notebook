@@ -10,15 +10,15 @@ BoardGame,Stronghold Games,https://strongholdgames.com/
 BoardGame,AEG,https://www.alderac.com/
 BoardGame,Gamewright,https://www.gamewright.com/
 ,Python,https://www.python.org/
-Computer,Jupyter,https://jupyter.org/
-Computer,Vue.js,https://vuejs.org/
-Computer,Node.js,https://nodejs.org/en
-Computer,Laravel,https://laravel.com/
-Computer,PHP,I love PHP and Composer!
-Computer,Packagist,https://packagist.org/
-Computer,MySQL,https://www.mysql.com/
-Computer,GitHub,https://github.com/
-Computer,Go,https://go.dev/
+Software,Jupyter,https://jupyter.org/
+Software,Vue.js,https://vuejs.org/
+Software,Node.js,https://nodejs.org/en
+Software,Laravel,https://laravel.com/
+Software,PHP,I love PHP and Composer!
+Software,Packagist,https://packagist.org/
+Software,MySQL,https://www.mysql.com/
+Software,GitHub,https://github.com/
+Software,Go,https://go.dev/
 Computer,Dell,https://www.dell.co/
 Computer,HP,https://www.hp.com/
 Computer,Lenovo,https://www.lenovo.com/
@@ -38,16 +38,16 @@ Electronics,Toshiba,https://www.toshiba.com/
 Electronics,Sharp,https://www.sharpusa.com/
 Electronics,Lenovo,https://www.lenovo.com/
 Electronics,HP,https://www.hp.com/
-GuitarMakers,Fender,https://www.fender.com/
-GuitarMakers,Gibson,https://www.gibson.com/
-GuitarMakers,Ibanez,https://www.ibanez.com/
-GuitarMakers,Epiphone,https://www.epiphone.com/
-GuitarMakers,PRS Guitars,https://www.prsguitars.com/
-GuitarMakers,Rickenbacker,https://www.rickenbacker.com/
-GuitarMakers,Gretsch,https://www.gretschguitars.com/
-GuitarMakers,Jackson Guitars,https://www.jacksonguitars.com/
-GuitarMakers,,https://www.deanguitars.com/
-GuitarMakers,Schecter,https://www.schecterguitars.com/
+Guitars,Fender,https://www.fender.com/
+Guitars,Gibson,https://www.gibson.com/
+Guitars,Ibanez,https://www.ibanez.com/
+Guitars,Epiphone,https://www.epiphone.com/
+Guitars,PRS Guitars,https://www.prsguitars.com/
+Guitars,Rickenbacker,https://www.rickenbacker.com/
+Guitars,Gretsch,https://www.gretschguitars.com/
+Guitars,Jackson Guitars,https://www.jacksonguitars.com/
+Guitars,,https://www.deanguitars.com/
+Guitars,Schecter,https://www.schecterguitars.com/
 InvestmentFirms,BlackRock,https://www.blackrock.com/
 InvestmentFirms,Vanguard,https://investor.vanguard.com/
 InvestmentFirms,Fidelity,https://www.fidelity.com/

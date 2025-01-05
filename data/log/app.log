@@ -1,8 +1,8 @@
-2025-01-01 20:55:09,560 - root - INFO - ======================================================
-2025-01-01 20:55:09,560 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:55:11,030 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:55:11,047 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:55:11,735 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+2025-01-05 00:04:11,663 - INFO - >======================================================>
+2025-01-05 00:04:11,663 - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-05 00:04:13,126 - INFO - Dependencies installed successfully!
+2025-01-05 00:04:13,148 - INFO - Version fetched for python: Python 3.12.8
+2025-01-05 00:04:13,806 - INFO - Version fetched for jupyter: Selected Jupyter core packages...
 IPython          : 8.28.0
 ipykernel        : 6.29.5
 ipywidgets       : not installed
@@ -16,23 +16,770 @@ nbformat         : not installed
 notebook         : not installed
 qtconsole        : not installed
 traitlets        : 5.14.3
-2025-01-01 20:55:11,735 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:55:11,745 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:55:11,771 - root - INFO - Removed Rows with Missing URL:
+2025-01-05 00:04:13,806 - INFO - Completed version retrieval for the stack.
+2025-01-05 00:04:13,822 - INFO - CSV file data\input\data.csv read successfully.
+2025-01-05 00:04:13,855 - INFO - Removed Rows with Missing URL:
    Category                  Name                      Url
   BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
+   Software                   PHP I love PHP and Composer!
    Computer                NVIDIA                      NaN
 Synthesizer   Teenage Engineering                      NaN
 Synthesizer             Behringer                      NaN
 Synthesizer https://www.korg.com/                      NaN
      Travel                Hilton  gttps://www.hilton.com/
   VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 20:57:02,665 - root - INFO - ======================================================
-2025-01-01 20:57:02,665 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:57:04,187 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:57:04,203 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:57:04,898 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
+2025-01-05 00:04:13,871 - INFO - Output directory created: data\output\250105-0004
+2025-01-05 00:04:13,899 - INFO - [1/101] Processing https://www.leadergames.com/ (Category: BoardGame, Name: Leader Games)
+2025-01-05 00:04:13,901 - DEBUG - Starting new HTTPS connection (1): www.leadergames.com:443
+2025-01-05 00:04:54,578 - ERROR - Error fetching robots.txt from https://www.leadergames.com/robots.txt: HTTPSConnectionPool(host='www.leadergames.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DDEDE9DD90>, 'Connection to www.leadergames.com timed out. (connect timeout=20)'))
+2025-01-05 00:04:54,578 - WARNING - Skipping https://www.leadergames.com/ due to robots.txt restrictions.
+2025-01-05 00:04:55,100 - INFO - [2/101] Processing https://www.indieboardsandcards.com/ (Category: BoardGame, Name: Indie Boards & Cards)
+2025-01-05 00:04:55,104 - DEBUG - Starting new HTTPS connection (1): www.indieboardsandcards.com:443
+2025-01-05 00:04:56,095 - DEBUG - https://www.indieboardsandcards.com:443 "GET /robots.txt HTTP/1.1" 301 None
+2025-01-05 00:04:56,095 - DEBUG - Starting new HTTPS connection (1): indieboardsandcards.com:443
+2025-01-05 00:04:56,273 - DEBUG - https://indieboardsandcards.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:04:56,275 - INFO - Permission granted to scrape: https://www.indieboardsandcards.com/
+2025-01-05 00:04:56,779 - DEBUG - Starting new HTTPS connection (1): www.indieboardsandcards.com:443
+2025-01-05 00:04:57,570 - DEBUG - https://www.indieboardsandcards.com:443 "GET / HTTP/1.1" 301 None
+2025-01-05 00:04:57,570 - DEBUG - Starting new HTTPS connection (1): indieboardsandcards.com:443
+2025-01-05 00:04:57,748 - DEBUG - https://indieboardsandcards.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:04:57,803 - INFO - Successfully processed https://www.indieboardsandcards.com/
+2025-01-05 00:04:58,306 - INFO - [3/101] Processing https://stonemaiergames.com/ (Category: BoardGame, Name: Stonemaier Games)
+2025-01-05 00:04:58,306 - DEBUG - Starting new HTTPS connection (1): stonemaiergames.com:443
+2025-01-05 00:04:58,884 - DEBUG - https://stonemaiergames.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:04:58,884 - INFO - Permission granted to scrape: https://stonemaiergames.com/
+2025-01-05 00:04:59,385 - DEBUG - Starting new HTTPS connection (1): stonemaiergames.com:443
+2025-01-05 00:04:59,847 - DEBUG - https://stonemaiergames.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:04:59,915 - INFO - Successfully processed https://stonemaiergames.com/
+2025-01-05 00:05:00,416 - INFO - [4/101] Processing https://www.theop.games/ (Category: BoardGame, Name: The OP)
+2025-01-05 00:05:00,417 - DEBUG - Starting new HTTPS connection (1): www.theop.games:443
+2025-01-05 00:05:00,931 - DEBUG - https://www.theop.games:443 "GET /robots.txt HTTP/1.1" 301 0
+2025-01-05 00:05:00,933 - DEBUG - Starting new HTTPS connection (1): theop.games:443
+2025-01-05 00:05:01,459 - DEBUG - https://theop.games:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:01,461 - INFO - Permission granted to scrape: https://www.theop.games/
+2025-01-05 00:05:01,963 - DEBUG - Starting new HTTPS connection (1): www.theop.games:443
+2025-01-05 00:05:02,102 - DEBUG - https://www.theop.games:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:05:02,102 - DEBUG - Starting new HTTPS connection (1): theop.games:443
+2025-01-05 00:05:02,264 - DEBUG - https://theop.games:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:02,296 - INFO - Successfully processed https://www.theop.games/
+2025-01-05 00:05:02,797 - INFO - [5/101] Processing https://www.fantasyflightgames.com/ (Category: BoardGame, Name: Fantasy Flight Games)
+2025-01-05 00:05:02,798 - DEBUG - Starting new HTTPS connection (1): www.fantasyflightgames.com:443
+2025-01-05 00:05:03,380 - DEBUG - https://www.fantasyflightgames.com:443 "GET /robots.txt HTTP/1.1" 302 None
+2025-01-05 00:05:03,430 - DEBUG - https://www.fantasyflightgames.com:443 "GET /en/robots.txt HTTP/1.1" 301 None
+2025-01-05 00:05:03,463 - DEBUG - https://www.fantasyflightgames.com:443 "GET /en/robots.txt/ HTTP/1.1" 403 None
+2025-01-05 00:05:03,464 - ERROR - Error fetching robots.txt from https://www.fantasyflightgames.com/robots.txt: 403 Client Error: Forbidden for url: https://www.fantasyflightgames.com/en/robots.txt/
+2025-01-05 00:05:03,464 - WARNING - Skipping https://www.fantasyflightgames.com/ due to robots.txt restrictions.
+2025-01-05 00:05:03,965 - INFO - [6/101] Processing https://www.renegadegamestudios.com/ (Category: BoardGame, Name: Renegade Game Studios)
+2025-01-05 00:05:03,965 - DEBUG - Starting new HTTPS connection (1): www.renegadegamestudios.com:443
+2025-01-05 00:05:04,364 - DEBUG - https://www.renegadegamestudios.com:443 "GET /robots.txt HTTP/1.1" 301 None
+2025-01-05 00:05:04,365 - DEBUG - Starting new HTTPS connection (1): renegadegamestudios.com:443
+2025-01-05 00:05:04,649 - DEBUG - https://renegadegamestudios.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:04,662 - INFO - Permission granted to scrape: https://www.renegadegamestudios.com/
+2025-01-05 00:05:05,164 - DEBUG - Starting new HTTPS connection (1): www.renegadegamestudios.com:443
+2025-01-05 00:05:05,282 - DEBUG - https://www.renegadegamestudios.com:443 "GET / HTTP/1.1" 301 None
+2025-01-05 00:05:05,283 - DEBUG - Starting new HTTPS connection (1): renegadegamestudios.com:443
+2025-01-05 00:05:05,700 - DEBUG - https://renegadegamestudios.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:05,752 - INFO - Successfully processed https://www.renegadegamestudios.com/
+2025-01-05 00:05:06,258 - INFO - [8/101] Processing https://strongholdgames.com/ (Category: BoardGame, Name: Stronghold Games)
+2025-01-05 00:05:06,258 - DEBUG - Starting new HTTPS connection (1): strongholdgames.com:443
+2025-01-05 00:05:06,583 - DEBUG - https://strongholdgames.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:06,583 - INFO - Permission granted to scrape: https://strongholdgames.com/
+2025-01-05 00:05:07,089 - DEBUG - Starting new HTTPS connection (1): strongholdgames.com:443
+2025-01-05 00:05:07,263 - DEBUG - https://strongholdgames.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:07,315 - INFO - Successfully processed https://strongholdgames.com/
+2025-01-05 00:05:07,817 - INFO - [9/101] Processing https://www.alderac.com/ (Category: BoardGame, Name: AEG)
+2025-01-05 00:05:07,818 - DEBUG - Starting new HTTPS connection (1): www.alderac.com:443
+2025-01-05 00:05:08,132 - DEBUG - https://www.alderac.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:08,132 - INFO - Permission granted to scrape: https://www.alderac.com/
+2025-01-05 00:05:08,638 - DEBUG - Starting new HTTPS connection (1): www.alderac.com:443
+2025-01-05 00:05:09,116 - DEBUG - https://www.alderac.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:09,185 - INFO - Successfully processed https://www.alderac.com/
+2025-01-05 00:05:09,696 - INFO - [10/101] Processing https://www.gamewright.com/ (Category: BoardGame, Name: Gamewright)
+2025-01-05 00:05:09,697 - DEBUG - Starting new HTTPS connection (1): www.gamewright.com:443
+2025-01-05 00:05:09,947 - DEBUG - https://www.gamewright.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:09,947 - INFO - Permission granted to scrape: https://www.gamewright.com/
+2025-01-05 00:05:10,448 - DEBUG - Starting new HTTPS connection (1): www.gamewright.com:443
+2025-01-05 00:05:10,682 - DEBUG - https://www.gamewright.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:10,686 - INFO - Successfully processed https://www.gamewright.com/
+2025-01-05 00:05:11,192 - INFO - [11/101] Processing https://www.python.org/ (Category: Unavailable, Name: Python)
+2025-01-05 00:05:11,192 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-05 00:05:11,344 - DEBUG - https://www.python.org:443 "GET /robots.txt HTTP/1.1" 200 297
+2025-01-05 00:05:11,345 - INFO - Permission granted to scrape: https://www.python.org/
+2025-01-05 00:05:11,847 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-05 00:05:11,916 - DEBUG - https://www.python.org:443 "GET / HTTP/1.1" 200 11679
+2025-01-05 00:05:11,933 - INFO - Successfully processed https://www.python.org/
+2025-01-05 00:05:12,438 - INFO - [12/101] Processing https://jupyter.org/ (Category: Software, Name: Jupyter)
+2025-01-05 00:05:12,438 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-05 00:05:12,766 - DEBUG - https://jupyter.org:443 "GET /robots.txt HTTP/1.1" 200 66
+2025-01-05 00:05:12,766 - INFO - Permission granted to scrape: https://jupyter.org/
+2025-01-05 00:05:13,277 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-05 00:05:13,366 - DEBUG - https://jupyter.org:443 "GET / HTTP/1.1" 200 5013
+2025-01-05 00:05:13,380 - INFO - Successfully processed https://jupyter.org/
+2025-01-05 00:05:13,882 - INFO - [13/101] Processing https://vuejs.org/ (Category: Software, Name: Vue.js)
+2025-01-05 00:05:13,883 - DEBUG - Starting new HTTPS connection (1): vuejs.org:443
+2025-01-05 00:05:14,267 - DEBUG - https://vuejs.org:443 "GET /robots.txt HTTP/1.1" 404 6250
+2025-01-05 00:05:14,269 - ERROR - Error fetching robots.txt from https://vuejs.org/robots.txt: 404 Client Error: Not Found for url: https://vuejs.org/robots.txt
+2025-01-05 00:05:14,269 - WARNING - Skipping https://vuejs.org/ due to robots.txt restrictions.
+2025-01-05 00:05:14,770 - INFO - [14/101] Processing https://nodejs.org/en (Category: Software, Name: Node.js)
+2025-01-05 00:05:14,770 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-05 00:05:15,147 - DEBUG - https://nodejs.org:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:15,147 - INFO - Permission granted to scrape: https://nodejs.org/en
+2025-01-05 00:05:15,649 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-05 00:05:15,791 - DEBUG - https://nodejs.org:443 "GET /en HTTP/1.1" 200 None
+2025-01-05 00:05:15,813 - INFO - Successfully processed https://nodejs.org/en
+2025-01-05 00:05:16,314 - INFO - [15/101] Processing https://laravel.com/ (Category: Software, Name: Laravel)
+2025-01-05 00:05:16,314 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-05 00:05:16,592 - DEBUG - https://laravel.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:16,592 - INFO - Permission granted to scrape: https://laravel.com/
+2025-01-05 00:05:17,098 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-05 00:05:17,179 - DEBUG - https://laravel.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:17,317 - INFO - Successfully processed https://laravel.com/
+2025-01-05 00:05:17,825 - INFO - [17/101] Processing https://packagist.org/ (Category: Software, Name: Packagist)
+2025-01-05 00:05:17,825 - DEBUG - Starting new HTTPS connection (1): packagist.org:443
+2025-01-05 00:05:18,249 - DEBUG - https://packagist.org:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:18,249 - INFO - Permission granted to scrape: https://packagist.org/
+2025-01-05 00:05:18,750 - DEBUG - Starting new HTTPS connection (1): packagist.org:443
+2025-01-05 00:05:18,981 - DEBUG - https://packagist.org:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:18,991 - INFO - Successfully processed https://packagist.org/
+2025-01-05 00:05:19,495 - INFO - [18/101] Processing https://www.mysql.com/ (Category: Software, Name: MySQL)
+2025-01-05 00:05:19,496 - DEBUG - Starting new HTTPS connection (1): www.mysql.com:443
+2025-01-05 00:05:20,249 - DEBUG - https://www.mysql.com:443 "GET /robots.txt HTTP/1.1" 200 149
+2025-01-05 00:05:20,249 - INFO - Permission granted to scrape: https://www.mysql.com/
+2025-01-05 00:05:20,752 - DEBUG - Starting new HTTPS connection (1): www.mysql.com:443
+2025-01-05 00:05:21,065 - DEBUG - https://www.mysql.com:443 "GET / HTTP/1.1" 200 7771
+2025-01-05 00:05:21,084 - INFO - Successfully processed https://www.mysql.com/
+2025-01-05 00:05:21,585 - INFO - [19/101] Processing https://github.com/ (Category: Software, Name: GitHub)
+2025-01-05 00:05:21,586 - DEBUG - Starting new HTTPS connection (1): github.com:443
+2025-01-05 00:05:21,963 - DEBUG - https://github.com:443 "GET /robots.txt HTTP/1.1" 200 556
+2025-01-05 00:05:21,964 - INFO - Permission granted to scrape: https://github.com/
+2025-01-05 00:05:22,465 - DEBUG - Starting new HTTPS connection (1): github.com:443
+2025-01-05 00:05:23,916 - DEBUG - https://github.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:24,256 - INFO - Successfully processed https://github.com/
+2025-01-05 00:05:24,756 - INFO - [20/101] Processing https://go.dev/ (Category: Software, Name: Go)
+2025-01-05 00:05:24,756 - DEBUG - Starting new HTTPS connection (1): go.dev:443
+2025-01-05 00:05:25,266 - DEBUG - https://go.dev:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:05:25,266 - INFO - Permission granted to scrape: https://go.dev/
+2025-01-05 00:05:25,771 - DEBUG - Starting new HTTPS connection (1): go.dev:443
+2025-01-05 00:05:25,885 - DEBUG - https://go.dev:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:05:25,915 - INFO - Successfully processed https://go.dev/
+2025-01-05 00:05:26,001 - INFO - Saved chunk 1 with 5962 rows to data\output\250105-0004\raw\website_words_chunk_1.csv
+2025-01-05 00:05:26,513 - INFO - [21/101] Processing https://www.dell.co/ (Category: Computer, Name: Dell)
+2025-01-05 00:05:26,515 - DEBUG - Starting new HTTPS connection (1): www.dell.co:443
+2025-01-05 00:06:26,779 - ERROR - Error fetching robots.txt from https://www.dell.co/robots.txt: HTTPSConnectionPool(host='www.dell.co', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001DDEE2E9F40>, 'Connection to www.dell.co timed out. (connect timeout=20)'))
+2025-01-05 00:06:26,779 - WARNING - Skipping https://www.dell.co/ due to robots.txt restrictions.
+2025-01-05 00:06:27,281 - INFO - [22/101] Processing https://www.hp.com/ (Category: Computer, Name: HP)
+2025-01-05 00:06:27,282 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-05 00:06:28,882 - DEBUG - https://www.hp.com:443 "GET /robots.txt HTTP/1.1" 200 1822
+2025-01-05 00:06:28,883 - INFO - Permission granted to scrape: https://www.hp.com/
+2025-01-05 00:06:29,385 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-05 00:06:31,962 - DEBUG - https://www.hp.com:443 "GET / HTTP/1.1" 301 239
+2025-01-05 00:06:31,962 - DEBUG - Starting new HTTPS connection (1): www-redirect.ext.hp.com:443
+2025-01-05 00:06:32,960 - DEBUG - https://www-redirect.ext.hp.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:06:32,960 - DEBUG - Starting new HTTPS connection (1): www8.hp.com:443
+2025-01-05 00:06:33,301 - DEBUG - https://www8.hp.com:443 "GET /us/en/home.html HTTP/1.1" 301 0
+2025-01-05 00:06:33,390 - DEBUG - https://www.hp.com:443 "GET /us-en/home.html HTTP/1.1" 200 None
+2025-01-05 00:06:33,564 - INFO - Successfully processed https://www.hp.com/
+2025-01-05 00:06:34,075 - INFO - [23/101] Processing https://www.lenovo.com/ (Category: Computer, Name: Lenovo)
+2025-01-05 00:06:34,076 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-05 00:06:35,889 - DEBUG - https://www.lenovo.com:443 "GET /robots.txt HTTP/1.1" 200 562
+2025-01-05 00:06:35,891 - INFO - Permission granted to scrape: https://www.lenovo.com/
+2025-01-05 00:06:36,391 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-05 00:06:37,446 - DEBUG - https://www.lenovo.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:06:37,664 - DEBUG - https://www.lenovo.com:443 "GET /us/en/ HTTP/1.1" 200 None
+2025-01-05 00:06:37,768 - INFO - Successfully processed https://www.lenovo.com/
+2025-01-05 00:06:38,269 - INFO - [24/101] Processing https://www.apple.com/ (Category: Computer, Name: Apple)
+2025-01-05 00:06:38,269 - DEBUG - Starting new HTTPS connection (1): www.apple.com:443
+2025-01-05 00:06:38,493 - DEBUG - https://www.apple.com:443 "GET /robots.txt HTTP/1.1" 200 384
+2025-01-05 00:06:38,493 - INFO - Permission granted to scrape: https://www.apple.com/
+2025-01-05 00:06:38,999 - DEBUG - Starting new HTTPS connection (1): www.apple.com:443
+2025-01-05 00:06:39,282 - DEBUG - https://www.apple.com:443 "GET / HTTP/1.1" 200 39990
+2025-01-05 00:06:39,619 - INFO - Successfully processed https://www.apple.com/
+2025-01-05 00:06:40,120 - INFO - [25/101] Processing https://www.asus.com/ (Category: Unavailable, Name: Asus)
+2025-01-05 00:06:40,120 - DEBUG - Starting new HTTPS connection (1): www.asus.com:443
+2025-01-05 00:06:40,275 - DEBUG - https://www.asus.com:443 "GET /robots.txt HTTP/1.1" 200 189
+2025-01-05 00:06:40,275 - INFO - Permission granted to scrape: https://www.asus.com/
+2025-01-05 00:06:40,777 - DEBUG - Starting new HTTPS connection (1): www.asus.com:443
+2025-01-05 00:06:41,303 - DEBUG - https://www.asus.com:443 "GET / HTTP/1.1" 200 60748
+2025-01-05 00:06:41,421 - INFO - Successfully processed https://www.asus.com/
+2025-01-05 00:06:41,923 - INFO - [26/101] Processing https://www.acer.com/ (Category: Computer, Name: Acer)
+2025-01-05 00:06:41,923 - DEBUG - Starting new HTTPS connection (1): www.acer.com:443
+2025-01-05 00:06:51,145 - DEBUG - https://www.acer.com:443 "GET /robots.txt HTTP/1.1" 200 457
+2025-01-05 00:06:51,160 - INFO - Permission granted to scrape: https://www.acer.com/
+2025-01-05 00:06:51,661 - DEBUG - Starting new HTTPS connection (1): www.acer.com:443
+2025-01-05 00:07:00,968 - DEBUG - https://www.acer.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:11,303 - DEBUG - https://www.acer.com:443 "GET /us-en/ HTTP/1.1" 200 None
+2025-01-05 00:07:11,437 - INFO - Successfully processed https://www.acer.com/
+2025-01-05 00:07:11,947 - INFO - [27/101] Processing https://www.msi.com/ (Category: Computer, Name: MSI)
+2025-01-05 00:07:11,949 - DEBUG - Starting new HTTPS connection (1): www.msi.com:443
+2025-01-05 00:07:12,188 - DEBUG - https://www.msi.com:443 "GET /robots.txt HTTP/1.1" 403 379
+2025-01-05 00:07:12,188 - ERROR - Error fetching robots.txt from https://www.msi.com/robots.txt: 403 Client Error: Forbidden for url: https://www.msi.com/robots.txt
+2025-01-05 00:07:12,188 - WARNING - Skipping https://www.msi.com/ due to robots.txt restrictions.
+2025-01-05 00:07:12,692 - INFO - [28/101] Processing https://www.intel.com/ (Category: Computer, Name: Intel)
+2025-01-05 00:07:12,692 - DEBUG - Starting new HTTPS connection (1): www.intel.com:443
+2025-01-05 00:07:12,881 - DEBUG - https://www.intel.com:443 "GET /robots.txt HTTP/1.1" 200 4041
+2025-01-05 00:07:12,883 - INFO - Permission granted to scrape: https://www.intel.com/
+2025-01-05 00:07:13,385 - DEBUG - Starting new HTTPS connection (1): www.intel.com:443
+2025-01-05 00:07:13,466 - DEBUG - https://www.intel.com:443 "GET / HTTP/1.1" 403 365
+2025-01-05 00:07:13,467 - ERROR - Request error for https://www.intel.com/: 403 Client Error: Forbidden for url: https://www.intel.com/
+2025-01-05 00:07:13,968 - INFO - [29/101] Processing https://www.amd.com/ (Category: Computer, Name: AMD)
+2025-01-05 00:07:13,969 - DEBUG - Starting new HTTPS connection (1): www.amd.com:443
+2025-01-05 00:07:14,177 - DEBUG - https://www.amd.com:443 "GET /robots.txt HTTP/1.1" 200 980
+2025-01-05 00:07:14,178 - INFO - Permission granted to scrape: https://www.amd.com/
+2025-01-05 00:07:14,681 - DEBUG - Starting new HTTPS connection (1): www.amd.com:443
+2025-01-05 00:07:14,792 - DEBUG - https://www.amd.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:14,841 - DEBUG - https://www.amd.com:443 "GET /en.html HTTP/1.1" 200 26503
+2025-01-05 00:07:14,915 - INFO - Successfully processed https://www.amd.com/
+2025-01-05 00:07:15,425 - INFO - [31/101] Processing https://www.samsung.com/ (Category: Electronics, Name: Samsung)
+2025-01-05 00:07:15,426 - DEBUG - Starting new HTTPS connection (1): www.samsung.com:443
+2025-01-05 00:07:15,914 - DEBUG - https://www.samsung.com:443 "GET /robots.txt HTTP/1.1" 200 1781
+2025-01-05 00:07:15,916 - INFO - Permission granted to scrape: https://www.samsung.com/
+2025-01-05 00:07:16,418 - DEBUG - Starting new HTTPS connection (1): www.samsung.com:443
+2025-01-05 00:07:16,574 - DEBUG - https://www.samsung.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:16,633 - DEBUG - https://www.samsung.com:443 "GET /us/ HTTP/1.1" 200 None
+2025-01-05 00:07:16,798 - INFO - Successfully processed https://www.samsung.com/
+2025-01-05 00:07:17,299 - INFO - [32/101] Processing https://www.sony.com/ (Category: Electronics, Name: Sony)
+2025-01-05 00:07:17,300 - DEBUG - Starting new HTTPS connection (1): www.sony.com:443
+2025-01-05 00:07:17,679 - DEBUG - https://www.sony.com:443 "GET /robots.txt HTTP/1.1" 200 3336
+2025-01-05 00:07:17,679 - INFO - Permission granted to scrape: https://www.sony.com/
+2025-01-05 00:07:18,192 - DEBUG - Starting new HTTPS connection (1): www.sony.com:443
+2025-01-05 00:07:18,283 - DEBUG - https://www.sony.com:443 "GET / HTTP/1.1" 302 0
+2025-01-05 00:07:18,341 - DEBUG - https://www.sony.com:443 "GET /en/ HTTP/1.1" 403 183
+2025-01-05 00:07:18,342 - ERROR - Request error for https://www.sony.com/: 403 Client Error: Forbidden for url: https://www.sony.com/en/
+2025-01-05 00:07:18,844 - INFO - [33/101] Processing https://www.lg.com/ (Category: Electronics, Name: LG)
+2025-01-05 00:07:18,844 - DEBUG - Starting new HTTPS connection (1): www.lg.com:443
+2025-01-05 00:07:19,143 - DEBUG - https://www.lg.com:443 "GET /robots.txt HTTP/1.1" 200 1794
+2025-01-05 00:07:19,144 - INFO - Permission granted to scrape: https://www.lg.com/
+2025-01-05 00:07:19,648 - DEBUG - Starting new HTTPS connection (1): www.lg.com:443
+2025-01-05 00:07:19,757 - DEBUG - https://www.lg.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:19,799 - DEBUG - https://www.lg.com:443 "GET /us HTTP/1.1" 301 162
+2025-01-05 00:07:19,873 - DEBUG - https://www.lg.com:443 "GET /us/ HTTP/1.1" 200 None
+2025-01-05 00:07:20,059 - INFO - Successfully processed https://www.lg.com/
+2025-01-05 00:07:20,561 - INFO - [34/101] Processing https://www.panasonic.com/ (Category: Electronics, Name: Panasonic)
+2025-01-05 00:07:20,561 - DEBUG - Starting new HTTPS connection (1): www.panasonic.com:443
+2025-01-05 00:07:40,789 - ERROR - Error fetching robots.txt from https://www.panasonic.com/robots.txt: HTTPSConnectionPool(host='www.panasonic.com', port=443): Read timed out. (read timeout=20)
+2025-01-05 00:07:40,789 - WARNING - Skipping https://www.panasonic.com/ due to robots.txt restrictions.
+2025-01-05 00:07:41,289 - INFO - [35/101] Processing https://www.philips.com/ (Category: Electronics, Name: Philips)
+2025-01-05 00:07:41,289 - DEBUG - Starting new HTTPS connection (1): www.philips.com:443
+2025-01-05 00:07:41,995 - DEBUG - https://www.philips.com:443 "GET /robots.txt HTTP/1.1" 200 488
+2025-01-05 00:07:41,996 - INFO - Permission granted to scrape: https://www.philips.com/
+2025-01-05 00:07:42,496 - DEBUG - Starting new HTTPS connection (1): www.philips.com:443
+2025-01-05 00:07:42,769 - DEBUG - https://www.philips.com:443 "GET / HTTP/1.1" 302 154
+2025-01-05 00:07:42,769 - DEBUG - Starting new HTTPS connection (1): www.usa.philips.com:443
+2025-01-05 00:07:43,148 - DEBUG - https://www.usa.philips.com:443 "GET / HTTP/1.1" 200 47111
+2025-01-05 00:07:43,349 - INFO - Successfully processed https://www.philips.com/
+2025-01-05 00:07:43,856 - INFO - [36/101] Processing https://www.toshiba.com/ (Category: Electronics, Name: Toshiba)
+2025-01-05 00:07:43,857 - DEBUG - Starting new HTTPS connection (1): www.toshiba.com:443
+2025-01-05 00:07:44,406 - DEBUG - https://www.toshiba.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:07:44,406 - INFO - Permission granted to scrape: https://www.toshiba.com/
+2025-01-05 00:07:44,907 - DEBUG - Starting new HTTPS connection (1): www.toshiba.com:443
+2025-01-05 00:07:45,131 - DEBUG - https://www.toshiba.com:443 "GET / HTTP/1.1" 301 None
+2025-01-05 00:07:45,363 - DEBUG - https://www.toshiba.com:443 "GET /tai/ HTTP/1.1" 200 None
+2025-01-05 00:07:45,392 - INFO - Successfully processed https://www.toshiba.com/
+2025-01-05 00:07:45,894 - INFO - [37/101] Processing https://www.sharpusa.com/ (Category: Electronics, Name: Sharp)
+2025-01-05 00:07:45,895 - DEBUG - Starting new HTTPS connection (1): www.sharpusa.com:443
+2025-01-05 00:07:46,365 - ERROR - Error fetching robots.txt from https://www.sharpusa.com/robots.txt: HTTPSConnectionPool(host='www.sharpusa.com', port=443): Max retries exceeded with url: /robots.txt (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1000)')))
+2025-01-05 00:07:46,365 - WARNING - Skipping https://www.sharpusa.com/ due to robots.txt restrictions.
+2025-01-05 00:07:46,866 - INFO - [38/101] Processing https://www.lenovo.com/ (Category: Electronics, Name: Lenovo)
+2025-01-05 00:07:46,866 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-05 00:07:47,062 - DEBUG - https://www.lenovo.com:443 "GET /robots.txt HTTP/1.1" 200 562
+2025-01-05 00:07:47,065 - INFO - Permission granted to scrape: https://www.lenovo.com/
+2025-01-05 00:07:47,566 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-05 00:07:47,781 - DEBUG - https://www.lenovo.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:47,857 - DEBUG - https://www.lenovo.com:443 "GET /us/en/ HTTP/1.1" 200 None
+2025-01-05 00:07:47,982 - INFO - Successfully processed https://www.lenovo.com/
+2025-01-05 00:07:48,482 - INFO - [39/101] Processing https://www.hp.com/ (Category: Electronics, Name: HP)
+2025-01-05 00:07:48,483 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-05 00:07:48,644 - DEBUG - https://www.hp.com:443 "GET /robots.txt HTTP/1.1" 200 1822
+2025-01-05 00:07:48,644 - INFO - Permission granted to scrape: https://www.hp.com/
+2025-01-05 00:07:49,147 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-05 00:07:49,262 - DEBUG - https://www.hp.com:443 "GET / HTTP/1.1" 301 239
+2025-01-05 00:07:49,264 - DEBUG - Starting new HTTPS connection (1): www-redirect.ext.hp.com:443
+2025-01-05 00:07:49,718 - DEBUG - https://www-redirect.ext.hp.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:49,718 - DEBUG - Starting new HTTPS connection (1): www8.hp.com:443
+2025-01-05 00:07:49,939 - DEBUG - https://www8.hp.com:443 "GET /us/en/home.html HTTP/1.1" 301 0
+2025-01-05 00:07:50,111 - DEBUG - https://www.hp.com:443 "GET /us-en/home.html HTTP/1.1" 200 None
+2025-01-05 00:07:50,326 - INFO - Successfully processed https://www.hp.com/
+2025-01-05 00:07:50,827 - INFO - [40/101] Processing https://www.fender.com/ (Category: Guitars, Name: Fender)
+2025-01-05 00:07:50,828 - DEBUG - Starting new HTTPS connection (1): www.fender.com:443
+2025-01-05 00:07:51,011 - DEBUG - https://www.fender.com:443 "GET /robots.txt HTTP/1.1" 200 1446
+2025-01-05 00:07:51,027 - DEBUG - Encoding detection: ascii is most likely the one.
+2025-01-05 00:07:51,042 - INFO - Permission granted to scrape: https://www.fender.com/
+2025-01-05 00:07:51,544 - DEBUG - Starting new HTTPS connection (1): www.fender.com:443
+2025-01-05 00:07:51,729 - DEBUG - https://www.fender.com:443 "GET / HTTP/1.1" 302 None
+2025-01-05 00:07:54,246 - DEBUG - https://www.fender.com:443 "GET /en-US/start HTTP/1.1" 200 None
+2025-01-05 00:07:54,312 - INFO - Successfully processed https://www.fender.com/
+2025-01-05 00:07:54,362 - INFO - Saved chunk 2 with 7179 rows to data\output\250105-0004\raw\website_words_chunk_2.csv
+2025-01-05 00:07:54,868 - INFO - [41/101] Processing https://www.gibson.com/ (Category: Guitars, Name: Gibson)
+2025-01-05 00:07:54,870 - DEBUG - Starting new HTTPS connection (1): www.gibson.com:443
+2025-01-05 00:07:55,297 - DEBUG - https://www.gibson.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:07:55,297 - INFO - Permission granted to scrape: https://www.gibson.com/
+2025-01-05 00:07:55,799 - DEBUG - Starting new HTTPS connection (1): www.gibson.com:443
+2025-01-05 00:07:55,999 - DEBUG - https://www.gibson.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:56,235 - DEBUG - https://www.gibson.com:443 "GET /en-US/ HTTP/1.1" 200 None
+2025-01-05 00:07:56,408 - INFO - Successfully processed https://www.gibson.com/
+2025-01-05 00:07:56,909 - INFO - [42/101] Processing https://www.ibanez.com/ (Category: Guitars, Name: Ibanez)
+2025-01-05 00:07:56,909 - DEBUG - Starting new HTTPS connection (1): www.ibanez.com:443
+2025-01-05 00:07:57,589 - DEBUG - https://www.ibanez.com:443 "GET /robots.txt HTTP/1.1" 404 None
+2025-01-05 00:07:57,589 - ERROR - Error fetching robots.txt from https://www.ibanez.com/robots.txt: 404 Client Error: Not Found for url: https://www.ibanez.com/robots.txt
+2025-01-05 00:07:57,592 - WARNING - Skipping https://www.ibanez.com/ due to robots.txt restrictions.
+2025-01-05 00:07:58,092 - INFO - [43/101] Processing https://www.epiphone.com/ (Category: Guitars, Name: Epiphone)
+2025-01-05 00:07:58,092 - DEBUG - Starting new HTTPS connection (1): www.epiphone.com:443
+2025-01-05 00:07:58,648 - DEBUG - https://www.epiphone.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:07:58,648 - INFO - Permission granted to scrape: https://www.epiphone.com/
+2025-01-05 00:07:59,155 - DEBUG - Starting new HTTPS connection (1): www.epiphone.com:443
+2025-01-05 00:07:59,343 - DEBUG - https://www.epiphone.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:07:59,479 - DEBUG - https://www.epiphone.com:443 "GET /en-US/ HTTP/1.1" 200 None
+2025-01-05 00:07:59,537 - INFO - Successfully processed https://www.epiphone.com/
+2025-01-05 00:08:00,048 - INFO - [44/101] Processing https://www.prsguitars.com/ (Category: Guitars, Name: PRS Guitars)
+2025-01-05 00:08:00,049 - DEBUG - Starting new HTTPS connection (1): www.prsguitars.com:443
+2025-01-05 00:08:00,432 - DEBUG - https://www.prsguitars.com:443 "GET /robots.txt HTTP/1.1" 301 None
+2025-01-05 00:08:00,434 - DEBUG - Starting new HTTPS connection (1): prsguitars.com:443
+2025-01-05 00:08:00,704 - DEBUG - https://prsguitars.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:00,704 - INFO - Permission granted to scrape: https://www.prsguitars.com/
+2025-01-05 00:08:01,205 - DEBUG - Starting new HTTPS connection (1): www.prsguitars.com:443
+2025-01-05 00:08:01,283 - DEBUG - https://www.prsguitars.com:443 "GET / HTTP/1.1" 403 None
+2025-01-05 00:08:01,298 - ERROR - Request error for https://www.prsguitars.com/: 403 Client Error: Forbidden for url: https://www.prsguitars.com/
+2025-01-05 00:08:01,799 - INFO - [45/101] Processing https://www.rickenbacker.com/ (Category: Guitars, Name: Rickenbacker)
+2025-01-05 00:08:01,800 - DEBUG - Starting new HTTPS connection (1): www.rickenbacker.com:443
+2025-01-05 00:08:02,258 - DEBUG - https://www.rickenbacker.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:02,259 - INFO - Permission granted to scrape: https://www.rickenbacker.com/
+2025-01-05 00:08:02,761 - DEBUG - Starting new HTTPS connection (1): www.rickenbacker.com:443
+2025-01-05 00:08:03,022 - DEBUG - https://www.rickenbacker.com:443 "GET / HTTP/1.1" 200 30220
+2025-01-05 00:08:03,131 - INFO - Successfully processed https://www.rickenbacker.com/
+2025-01-05 00:08:03,632 - INFO - [46/101] Processing https://www.gretschguitars.com/ (Category: Guitars, Name: Gretsch)
+2025-01-05 00:08:03,633 - DEBUG - Starting new HTTPS connection (1): www.gretschguitars.com:443
+2025-01-05 00:08:04,104 - DEBUG - https://www.gretschguitars.com:443 "GET /robots.txt HTTP/1.1" 404 2380
+2025-01-05 00:08:04,104 - ERROR - Error fetching robots.txt from https://www.gretschguitars.com/robots.txt: 404 Client Error: Not Found for url: https://www.gretschguitars.com/robots.txt
+2025-01-05 00:08:04,106 - WARNING - Skipping https://www.gretschguitars.com/ due to robots.txt restrictions.
+2025-01-05 00:08:04,606 - INFO - [47/101] Processing https://www.jacksonguitars.com/ (Category: Guitars, Name: Jackson Guitars)
+2025-01-05 00:08:04,606 - DEBUG - Starting new HTTPS connection (1): www.jacksonguitars.com:443
+2025-01-05 00:08:05,159 - DEBUG - https://www.jacksonguitars.com:443 "GET /robots.txt HTTP/1.1" 404 None
+2025-01-05 00:08:05,159 - ERROR - Error fetching robots.txt from https://www.jacksonguitars.com/robots.txt: 404 Client Error: Not Found for url: https://www.jacksonguitars.com/robots.txt
+2025-01-05 00:08:05,160 - WARNING - Skipping https://www.jacksonguitars.com/ due to robots.txt restrictions.
+2025-01-05 00:08:05,660 - INFO - [48/101] Processing https://www.deanguitars.com/ (Category: Guitars, Name: Unavailable)
+2025-01-05 00:08:05,661 - DEBUG - Starting new HTTPS connection (1): www.deanguitars.com:443
+2025-01-05 00:08:06,044 - DEBUG - https://www.deanguitars.com:443 "GET /robots.txt HTTP/1.1" 200 66
+2025-01-05 00:08:06,045 - INFO - Permission granted to scrape: https://www.deanguitars.com/
+2025-01-05 00:08:06,547 - DEBUG - Starting new HTTPS connection (1): www.deanguitars.com:443
+2025-01-05 00:08:07,415 - DEBUG - https://www.deanguitars.com:443 "GET / HTTP/1.1" 200 11405
+2025-01-05 00:08:07,426 - INFO - Successfully processed https://www.deanguitars.com/
+2025-01-05 00:08:07,928 - INFO - [49/101] Processing https://www.schecterguitars.com/ (Category: Guitars, Name: Schecter)
+2025-01-05 00:08:07,928 - DEBUG - Starting new HTTPS connection (1): www.schecterguitars.com:443
+2025-01-05 00:08:08,646 - DEBUG - https://www.schecterguitars.com:443 "GET /robots.txt HTTP/1.1" 200 103
+2025-01-05 00:08:08,646 - INFO - Permission granted to scrape: https://www.schecterguitars.com/
+2025-01-05 00:08:09,148 - DEBUG - Starting new HTTPS connection (1): www.schecterguitars.com:443
+2025-01-05 00:08:09,284 - DEBUG - https://www.schecterguitars.com:443 "GET / HTTP/1.1" 200 9775
+2025-01-05 00:08:09,301 - INFO - Successfully processed https://www.schecterguitars.com/
+2025-01-05 00:08:09,802 - INFO - [50/101] Processing https://www.blackrock.com/ (Category: InvestmentFirms, Name: BlackRock)
+2025-01-05 00:08:09,803 - DEBUG - Starting new HTTPS connection (1): www.blackrock.com:443
+2025-01-05 00:08:12,490 - DEBUG - https://www.blackrock.com:443 "GET /robots.txt HTTP/1.1" 200 642
+2025-01-05 00:08:12,490 - INFO - Permission granted to scrape: https://www.blackrock.com/
+2025-01-05 00:08:12,995 - DEBUG - Starting new HTTPS connection (1): www.blackrock.com:443
+2025-01-05 00:08:13,425 - DEBUG - https://www.blackrock.com:443 "GET / HTTP/1.1" 302 0
+2025-01-05 00:08:13,614 - DEBUG - https://www.blackrock.com:443 "GET /us/individual HTTP/1.1" 200 26247
+2025-01-05 00:08:13,690 - INFO - Successfully processed https://www.blackrock.com/
+2025-01-05 00:08:14,194 - INFO - [51/101] Processing https://investor.vanguard.com/ (Category: InvestmentFirms, Name: Vanguard)
+2025-01-05 00:08:14,195 - DEBUG - Starting new HTTPS connection (1): investor.vanguard.com:443
+2025-01-05 00:08:14,455 - DEBUG - https://investor.vanguard.com:443 "GET /robots.txt HTTP/1.1" 200 114
+2025-01-05 00:08:14,455 - INFO - Permission granted to scrape: https://investor.vanguard.com/
+2025-01-05 00:08:14,959 - DEBUG - Starting new HTTPS connection (1): investor.vanguard.com:443
+2025-01-05 00:08:15,140 - DEBUG - https://investor.vanguard.com:443 "GET / HTTP/1.1" 200 32213
+2025-01-05 00:08:15,206 - INFO - Successfully processed https://investor.vanguard.com/
+2025-01-05 00:08:15,707 - INFO - [52/101] Processing https://www.fidelity.com/ (Category: InvestmentFirms, Name: Fidelity)
+2025-01-05 00:08:15,708 - DEBUG - Starting new HTTPS connection (1): www.fidelity.com:443
+2025-01-05 00:08:16,094 - DEBUG - https://www.fidelity.com:443 "GET /robots.txt HTTP/1.1" 200 12386
+2025-01-05 00:08:16,098 - INFO - Permission granted to scrape: https://www.fidelity.com/
+2025-01-05 00:08:16,599 - DEBUG - Starting new HTTPS connection (1): www.fidelity.com:443
+2025-01-05 00:08:16,768 - DEBUG - https://www.fidelity.com:443 "GET / HTTP/1.1" 200 23962
+2025-01-05 00:08:16,809 - INFO - Successfully processed https://www.fidelity.com/
+2025-01-05 00:08:17,315 - INFO - [53/101] Processing https://www.schwab.com/ (Category: InvestmentFirms, Name: Charles Schwab)
+2025-01-05 00:08:17,316 - DEBUG - Starting new HTTPS connection (1): www.schwab.com:443
+2025-01-05 00:08:17,582 - DEBUG - https://www.schwab.com:443 "GET /robots.txt HTTP/1.1" 200 390
+2025-01-05 00:08:17,583 - INFO - Permission granted to scrape: https://www.schwab.com/
+2025-01-05 00:08:18,084 - DEBUG - Starting new HTTPS connection (1): www.schwab.com:443
+2025-01-05 00:08:18,212 - DEBUG - https://www.schwab.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:18,333 - INFO - Successfully processed https://www.schwab.com/
+2025-01-05 00:08:18,835 - INFO - [54/101] Processing https://www.goldmansachs.com/ (Category: InvestmentFirms, Name: Goldman Sachs)
+2025-01-05 00:08:18,835 - DEBUG - Starting new HTTPS connection (1): www.goldmansachs.com:443
+2025-01-05 00:08:19,237 - DEBUG - https://www.goldmansachs.com:443 "GET /robots.txt HTTP/1.1" 200 195
+2025-01-05 00:08:19,237 - INFO - Permission granted to scrape: https://www.goldmansachs.com/
+2025-01-05 00:08:19,739 - DEBUG - Starting new HTTPS connection (1): www.goldmansachs.com:443
+2025-01-05 00:08:19,921 - DEBUG - https://www.goldmansachs.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:20,001 - INFO - Successfully processed https://www.goldmansachs.com/
+2025-01-05 00:08:20,502 - INFO - [55/101] Processing https://www.jpmorgan.com/ (Category: InvestmentFirms, Name: J.P. Morgan)
+2025-01-05 00:08:20,503 - DEBUG - Starting new HTTPS connection (1): www.jpmorgan.com:443
+2025-01-05 00:08:20,778 - DEBUG - https://www.jpmorgan.com:443 "GET /robots.txt HTTP/1.1" 200 137
+2025-01-05 00:08:20,778 - INFO - Permission granted to scrape: https://www.jpmorgan.com/
+2025-01-05 00:08:21,281 - DEBUG - Starting new HTTPS connection (1): www.jpmorgan.com:443
+2025-01-05 00:08:21,484 - DEBUG - https://www.jpmorgan.com:443 "GET / HTTP/1.1" 302 214
+2025-01-05 00:08:21,678 - DEBUG - https://www.jpmorgan.com:443 "GET /global HTTP/1.1" 200 32336
+2025-01-05 00:08:21,757 - INFO - Successfully processed https://www.jpmorgan.com/
+2025-01-05 00:08:22,258 - INFO - [56/101] Processing https://www.ssga.com/ (Category: InvestmentFirms, Name: State Street)
+2025-01-05 00:08:22,258 - DEBUG - Starting new HTTPS connection (1): www.ssga.com:443
+2025-01-05 00:08:22,712 - DEBUG - https://www.ssga.com:443 "GET /robots.txt HTTP/1.1" 200 491
+2025-01-05 00:08:22,725 - INFO - Permission granted to scrape: https://www.ssga.com/
+2025-01-05 00:08:23,228 - DEBUG - Starting new HTTPS connection (1): www.ssga.com:443
+2025-01-05 00:08:23,330 - DEBUG - https://www.ssga.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:23,418 - DEBUG - https://www.ssga.com:443 "GET /us/en HTTP/1.1" 200 17241
+2025-01-05 00:08:23,434 - INFO - Successfully processed https://www.ssga.com/
+2025-01-05 00:08:23,935 - INFO - [57/101] Processing https://www.franklintempleton.com/ (Category: InvestmentFirms, Name: Franklin Templeton)
+2025-01-05 00:08:23,935 - DEBUG - Starting new HTTPS connection (1): www.franklintempleton.com:443
+2025-01-05 00:08:24,205 - DEBUG - https://www.franklintempleton.com:443 "GET /robots.txt HTTP/1.1" 200 72
+2025-01-05 00:08:24,207 - INFO - Permission granted to scrape: https://www.franklintempleton.com/
+2025-01-05 00:08:24,714 - DEBUG - Starting new HTTPS connection (1): www.franklintempleton.com:443
+2025-01-05 00:08:24,879 - DEBUG - https://www.franklintempleton.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:24,881 - INFO - Successfully processed https://www.franklintempleton.com/
+2025-01-05 00:08:25,382 - INFO - [58/101] Processing https://www.invesco.com/ (Category: InvestmentFirms, Name: Invesco)
+2025-01-05 00:08:25,382 - DEBUG - Starting new HTTPS connection (1): www.invesco.com:443
+2025-01-05 00:08:25,545 - DEBUG - https://www.invesco.com:443 "GET /robots.txt HTTP/1.1" 200 351
+2025-01-05 00:08:25,545 - INFO - Permission granted to scrape: https://www.invesco.com/
+2025-01-05 00:08:26,046 - DEBUG - Starting new HTTPS connection (1): www.invesco.com:443
+2025-01-05 00:08:26,131 - DEBUG - https://www.invesco.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:26,132 - DEBUG - Resetting dropped connection: www.invesco.com
+2025-01-05 00:08:26,206 - DEBUG - https://www.invesco.com:443 "GET /us/en HTTP/1.1" 307 0
+2025-01-05 00:08:26,207 - DEBUG - Resetting dropped connection: www.invesco.com
+2025-01-05 00:08:26,278 - DEBUG - https://www.invesco.com:443 "GET /us/en/country-splash.html HTTP/1.1" 200 34976
+2025-01-05 00:08:26,309 - INFO - Successfully processed https://www.invesco.com/
+2025-01-05 00:08:26,809 - INFO - [59/101] Processing https://www.blackstone.com/ (Category: InvestmentFirms, Name: Blackstone)
+2025-01-05 00:08:26,812 - DEBUG - Starting new HTTPS connection (1): www.blackstone.com:443
+2025-01-05 00:08:27,182 - DEBUG - https://www.blackstone.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:27,184 - INFO - Permission granted to scrape: https://www.blackstone.com/
+2025-01-05 00:08:27,686 - DEBUG - Starting new HTTPS connection (1): www.blackstone.com:443
+2025-01-05 00:08:27,821 - DEBUG - https://www.blackstone.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:27,911 - INFO - Successfully processed https://www.blackstone.com/
+2025-01-05 00:08:28,412 - INFO - [60/101] Processing https://www.penguinrandomhouse.com/ (Category: Publishing, Name: Penguin Random House)
+2025-01-05 00:08:28,413 - DEBUG - Starting new HTTPS connection (1): www.penguinrandomhouse.com:443
+2025-01-05 00:08:28,582 - DEBUG - https://www.penguinrandomhouse.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:28,582 - INFO - Permission granted to scrape: https://www.penguinrandomhouse.com/
+2025-01-05 00:08:29,096 - DEBUG - Starting new HTTPS connection (1): www.penguinrandomhouse.com:443
+2025-01-05 00:08:29,197 - DEBUG - https://www.penguinrandomhouse.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:29,252 - INFO - Successfully processed https://www.penguinrandomhouse.com/
+2025-01-05 00:08:29,264 - INFO - Saved chunk 3 with 8809 rows to data\output\250105-0004\raw\website_words_chunk_3.csv
+2025-01-05 00:08:29,774 - INFO - [61/101] Processing https://www.harpercollins.com/ (Category: Publishing, Name: HarperCollins)
+2025-01-05 00:08:29,774 - DEBUG - Starting new HTTPS connection (1): www.harpercollins.com:443
+2025-01-05 00:08:30,204 - DEBUG - https://www.harpercollins.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:30,204 - INFO - Permission granted to scrape: https://www.harpercollins.com/
+2025-01-05 00:08:30,707 - DEBUG - Starting new HTTPS connection (1): www.harpercollins.com:443
+2025-01-05 00:08:30,799 - DEBUG - https://www.harpercollins.com:443 "GET / HTTP/1.1" 403 None
+2025-01-05 00:08:30,802 - ERROR - Request error for https://www.harpercollins.com/: 403 Client Error: Forbidden for url: https://www.harpercollins.com/
+2025-01-05 00:08:31,304 - INFO - [62/101] Processing https://www.simonandschuster.com/ (Category: Publishing, Name: Simon & Schuster)
+2025-01-05 00:08:31,304 - DEBUG - Starting new HTTPS connection (1): www.simonandschuster.com:443
+2025-01-05 00:08:31,698 - DEBUG - https://www.simonandschuster.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:31,712 - INFO - Permission granted to scrape: https://www.simonandschuster.com/
+2025-01-05 00:08:32,214 - DEBUG - Starting new HTTPS connection (1): www.simonandschuster.com:443
+2025-01-05 00:08:32,434 - DEBUG - https://www.simonandschuster.com:443 "GET / HTTP/1.1" 200 30523
+2025-01-05 00:08:32,482 - INFO - Successfully processed https://www.simonandschuster.com/
+2025-01-05 00:08:32,983 - INFO - [63/101] Processing https://us.macmillan.com/ (Category: Publishing, Name: Macmillan)
+2025-01-05 00:08:32,984 - DEBUG - Starting new HTTPS connection (1): us.macmillan.com:443
+2025-01-05 00:08:33,281 - DEBUG - https://us.macmillan.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:33,281 - WARNING - Permission denied to scrape: https://us.macmillan.com/
+2025-01-05 00:08:33,793 - WARNING - Skipping https://us.macmillan.com/ due to robots.txt restrictions.
+2025-01-05 00:08:34,294 - INFO - [64/101] Processing https://www.hachettebookgroup.com/ (Category: Publishing, Name: Hachette Book Group)
+2025-01-05 00:08:34,295 - DEBUG - Starting new HTTPS connection (1): www.hachettebookgroup.com:443
+2025-01-05 00:08:34,636 - DEBUG - https://www.hachettebookgroup.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:34,637 - INFO - Permission granted to scrape: https://www.hachettebookgroup.com/
+2025-01-05 00:08:35,138 - DEBUG - Starting new HTTPS connection (1): www.hachettebookgroup.com:443
+2025-01-05 00:08:35,231 - DEBUG - https://www.hachettebookgroup.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:35,336 - INFO - Successfully processed https://www.hachettebookgroup.com/
+2025-01-05 00:08:35,837 - INFO - [65/101] Processing https://www.bloomsbury.com/ (Category: Publishing, Name: Bloomsbury)
+2025-01-05 00:08:35,837 - DEBUG - Starting new HTTPS connection (1): www.bloomsbury.com:443
+2025-01-05 00:08:36,511 - DEBUG - https://www.bloomsbury.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:36,513 - DEBUG - Encoding detection: ascii is most likely the one.
+2025-01-05 00:08:36,513 - INFO - Permission granted to scrape: https://www.bloomsbury.com/
+2025-01-05 00:08:37,015 - DEBUG - Starting new HTTPS connection (1): www.bloomsbury.com:443
+2025-01-05 00:08:37,132 - DEBUG - https://www.bloomsbury.com:443 "GET / HTTP/1.1" 403 None
+2025-01-05 00:08:37,132 - ERROR - Request error for https://www.bloomsbury.com/: 403 Client Error: Forbidden for url: https://www.bloomsbury.com/
+2025-01-05 00:08:37,639 - INFO - [66/101] Processing https://www.scholastic.com/ (Category: Publishing, Name: Scholastic)
+2025-01-05 00:08:37,640 - DEBUG - Starting new HTTPS connection (1): www.scholastic.com:443
+2025-01-05 00:08:37,883 - DEBUG - https://www.scholastic.com:443 "GET /robots.txt HTTP/1.1" 200 1392
+2025-01-05 00:08:37,898 - INFO - Permission granted to scrape: https://www.scholastic.com/
+2025-01-05 00:08:38,400 - DEBUG - Starting new HTTPS connection (1): www.scholastic.com:443
+2025-01-05 00:08:38,511 - DEBUG - https://www.scholastic.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:38,548 - DEBUG - https://www.scholastic.com:443 "GET /home HTTP/1.1" 200 11920
+2025-01-05 00:08:38,563 - INFO - Successfully processed https://www.scholastic.com/
+2025-01-05 00:08:39,074 - INFO - [67/101] Processing https://www.wiley.com/ (Category: Publishing, Name: Wiley)
+2025-01-05 00:08:39,074 - DEBUG - Starting new HTTPS connection (1): www.wiley.com:443
+2025-01-05 00:08:39,314 - DEBUG - https://www.wiley.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:39,314 - INFO - Permission granted to scrape: https://www.wiley.com/
+2025-01-05 00:08:39,822 - DEBUG - Starting new HTTPS connection (1): www.wiley.com:443
+2025-01-05 00:08:39,930 - DEBUG - https://www.wiley.com:443 "GET / HTTP/1.1" 302 0
+2025-01-05 00:08:40,017 - DEBUG - https://www.wiley.com:443 "GET /en-us/ HTTP/1.1" 301 None
+2025-01-05 00:08:40,098 - DEBUG - https://www.wiley.com:443 "GET /en-us HTTP/1.1" 200 None
+2025-01-05 00:08:40,174 - INFO - Successfully processed https://www.wiley.com/
+2025-01-05 00:08:40,681 - INFO - [68/101] Processing https://global.oup.com/ (Category: Publishing, Name: Oxford University Press)
+2025-01-05 00:08:40,682 - DEBUG - Starting new HTTPS connection (1): global.oup.com:443
+2025-01-05 00:08:41,350 - DEBUG - https://global.oup.com:443 "GET /robots.txt HTTP/1.1" 202 0
+2025-01-05 00:08:41,350 - INFO - Permission granted to scrape: https://global.oup.com/
+2025-01-05 00:08:41,855 - DEBUG - Starting new HTTPS connection (1): global.oup.com:443
+2025-01-05 00:08:42,340 - DEBUG - https://global.oup.com:443 "GET / HTTP/1.1" 202 0
+2025-01-05 00:08:42,342 - INFO - Successfully processed https://global.oup.com/
+2025-01-05 00:08:42,842 - INFO - [69/101] Processing https://press.princeton.edu/ (Category: Publishing, Name: Princeton University Press)
+2025-01-05 00:08:42,842 - DEBUG - Starting new HTTPS connection (1): press.princeton.edu:443
+2025-01-05 00:08:43,053 - DEBUG - https://press.princeton.edu:443 "GET /robots.txt HTTP/1.1" 200 3080
+2025-01-05 00:08:43,053 - INFO - Permission granted to scrape: https://press.princeton.edu/
+2025-01-05 00:08:43,564 - DEBUG - Starting new HTTPS connection (1): press.princeton.edu:443
+2025-01-05 00:08:43,647 - DEBUG - https://press.princeton.edu:443 "GET / HTTP/1.1" 200 29789
+2025-01-05 00:08:43,674 - INFO - Successfully processed https://press.princeton.edu/
+2025-01-05 00:08:44,177 - INFO - [70/101] Processing https://www.nike.com/ (Category: SportsGear, Name: Nike)
+2025-01-05 00:08:44,178 - DEBUG - Starting new HTTPS connection (1): www.nike.com:443
+2025-01-05 00:08:44,448 - DEBUG - https://www.nike.com:443 "GET /robots.txt HTTP/1.1" 200 621
+2025-01-05 00:08:44,448 - INFO - Permission granted to scrape: https://www.nike.com/
+2025-01-05 00:08:44,959 - DEBUG - Starting new HTTPS connection (1): www.nike.com:443
+2025-01-05 00:08:45,302 - DEBUG - https://www.nike.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:45,424 - INFO - Successfully processed https://www.nike.com/
+2025-01-05 00:08:45,925 - INFO - [71/101] Processing https://www.adidas.com/ (Category: SportsGear, Name: Adidas)
+2025-01-05 00:08:45,925 - DEBUG - Starting new HTTPS connection (1): www.adidas.com:443
+2025-01-05 00:08:46,597 - DEBUG - https://www.adidas.com:443 "GET /robots.txt HTTP/1.1" 200 1670
+2025-01-05 00:08:46,599 - INFO - Permission granted to scrape: https://www.adidas.com/
+2025-01-05 00:08:47,100 - DEBUG - Starting new HTTPS connection (1): www.adidas.com:443
+2025-01-05 00:08:47,318 - DEBUG - https://www.adidas.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:47,411 - DEBUG - https://www.adidas.com:443 "GET /us HTTP/1.1" 200 None
+2025-01-05 00:08:48,269 - INFO - Successfully processed https://www.adidas.com/
+2025-01-05 00:08:48,771 - INFO - [72/101] Processing https://www.underarmour.com/ (Category: SportsGear, Name: Under Armour)
+2025-01-05 00:08:48,771 - DEBUG - Starting new HTTPS connection (1): www.underarmour.com:443
+2025-01-05 00:08:48,948 - DEBUG - https://www.underarmour.com:443 "GET /robots.txt HTTP/1.1" 418 None
+2025-01-05 00:08:48,948 - ERROR - Error fetching robots.txt from https://www.underarmour.com/robots.txt: 418 Client Error: Unknown Error for url: https://www.underarmour.com/robots.txt
+2025-01-05 00:08:48,950 - WARNING - Skipping https://www.underarmour.com/ due to robots.txt restrictions.
+2025-01-05 00:08:49,450 - INFO - [73/101] Processing https://www.puma.com/ (Category: SportsGear, Name: Puma)
+2025-01-05 00:08:49,450 - DEBUG - Starting new HTTPS connection (1): www.puma.com:443
+2025-01-05 00:08:49,613 - DEBUG - https://www.puma.com:443 "GET /robots.txt HTTP/1.1" 301 0
+2025-01-05 00:08:49,614 - DEBUG - Starting new HTTPS connection (1): us.puma.com:443
+2025-01-05 00:08:49,800 - DEBUG - https://us.puma.com:443 "GET /us/en HTTP/1.1" 200 137325
+2025-01-05 00:08:49,848 - INFO - Permission granted to scrape: https://www.puma.com/
+2025-01-05 00:08:50,351 - DEBUG - Starting new HTTPS connection (1): www.puma.com:443
+2025-01-05 00:08:50,429 - DEBUG - https://www.puma.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:50,429 - DEBUG - Starting new HTTPS connection (1): us.puma.com:443
+2025-01-05 00:08:50,528 - DEBUG - https://us.puma.com:443 "GET /us/en HTTP/1.1" 200 137325
+2025-01-05 00:08:50,713 - INFO - Successfully processed https://www.puma.com/
+2025-01-05 00:08:51,215 - INFO - [74/101] Processing https://www.reebok.com/ (Category: SportsGear, Name: Reebok)
+2025-01-05 00:08:51,216 - DEBUG - Starting new HTTPS connection (1): www.reebok.com:443
+2025-01-05 00:08:51,532 - DEBUG - https://www.reebok.com:443 "GET /robots.txt HTTP/1.1" 200 511
+2025-01-05 00:08:51,532 - INFO - Permission granted to scrape: https://www.reebok.com/
+2025-01-05 00:08:52,033 - DEBUG - Starting new HTTPS connection (1): www.reebok.com:443
+2025-01-05 00:08:52,554 - DEBUG - https://www.reebok.com:443 "GET / HTTP/1.1" 200 351269
+2025-01-05 00:08:52,650 - INFO - Successfully processed https://www.reebok.com/
+2025-01-05 00:08:53,151 - INFO - [75/101] Processing https://www.newbalance.com/ (Category: SportsGear, Name: New Balance)
+2025-01-05 00:08:53,151 - DEBUG - Starting new HTTPS connection (1): www.newbalance.com:443
+2025-01-05 00:08:53,352 - DEBUG - https://www.newbalance.com:443 "GET /robots.txt HTTP/1.1" 403 633
+2025-01-05 00:08:53,352 - ERROR - Error fetching robots.txt from https://www.newbalance.com/robots.txt: 403 Client Error: Forbidden for url: https://www.newbalance.com/robots.txt
+2025-01-05 00:08:53,352 - WARNING - Skipping https://www.newbalance.com/ due to robots.txt restrictions.
+2025-01-05 00:08:53,854 - INFO - [76/101] Processing https://www.columbia.com/ (Category: SportsGear, Name: Columbia Sportswear)
+2025-01-05 00:08:53,855 - DEBUG - Starting new HTTPS connection (1): www.columbia.com:443
+2025-01-05 00:08:54,436 - DEBUG - https://www.columbia.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:54,436 - INFO - Permission granted to scrape: https://www.columbia.com/
+2025-01-05 00:08:54,937 - DEBUG - Starting new HTTPS connection (1): www.columbia.com:443
+2025-01-05 00:08:55,412 - DEBUG - https://www.columbia.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:08:55,580 - INFO - Successfully processed https://www.columbia.com/
+2025-01-05 00:08:56,081 - INFO - [77/101] Processing https://www.nikegolf.com/ (Category: SportsGear, Name: Nike Golf)
+2025-01-05 00:08:56,082 - DEBUG - Starting new HTTPS connection (1): www.nikegolf.com:443
+2025-01-05 00:08:56,367 - DEBUG - https://www.nikegolf.com:443 "GET /robots.txt HTTP/1.1" 301 0
+2025-01-05 00:08:56,367 - DEBUG - Starting new HTTPS connection (1): www.nike.com:443
+2025-01-05 00:08:56,795 - DEBUG - https://www.nike.com:443 "GET /golf HTTP/1.1" 200 None
+2025-01-05 00:08:56,870 - INFO - Permission granted to scrape: https://www.nikegolf.com/
+2025-01-05 00:08:57,374 - DEBUG - Starting new HTTPS connection (1): www.nikegolf.com:443
+2025-01-05 00:08:57,488 - DEBUG - https://www.nikegolf.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:08:57,488 - DEBUG - Starting new HTTPS connection (1): www.nike.com:443
+2025-01-05 00:08:57,902 - DEBUG - https://www.nike.com:443 "GET /golf HTTP/1.1" 200 None
+2025-01-05 00:08:58,016 - INFO - Successfully processed https://www.nikegolf.com/
+2025-01-05 00:08:58,520 - INFO - [78/101] Processing https://www.callawaygolf.com/ (Category: SportsGear, Name: Callaway Golf)
+2025-01-05 00:08:58,521 - DEBUG - Starting new HTTPS connection (1): www.callawaygolf.com:443
+2025-01-05 00:08:59,071 - DEBUG - https://www.callawaygolf.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:08:59,072 - INFO - Permission granted to scrape: https://www.callawaygolf.com/
+2025-01-05 00:08:59,574 - DEBUG - Starting new HTTPS connection (1): www.callawaygolf.com:443
+2025-01-05 00:09:01,460 - DEBUG - https://www.callawaygolf.com:443 "GET / HTTP/1.1" 200 188598
+2025-01-05 00:09:01,772 - INFO - Successfully processed https://www.callawaygolf.com/
+2025-01-05 00:09:02,273 - INFO - [79/101] Processing https://www.taylormadegolf.com/ (Category: SportsGear, Name: TaylorMade)
+2025-01-05 00:09:02,273 - DEBUG - Starting new HTTPS connection (1): www.taylormadegolf.com:443
+2025-01-05 00:09:02,684 - DEBUG - https://www.taylormadegolf.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:02,684 - INFO - Permission granted to scrape: https://www.taylormadegolf.com/
+2025-01-05 00:09:03,194 - DEBUG - Starting new HTTPS connection (1): www.taylormadegolf.com:443
+2025-01-05 00:09:03,419 - DEBUG - https://www.taylormadegolf.com:443 "GET / HTTP/1.1" 302 0
+2025-01-05 00:09:03,485 - DEBUG - https://www.taylormadegolf.com:443 "GET /on/demandware.store/Sites-TMaG-Site/en_US/DDUser-Challenge?redirect=%2Fon%2Fdemandware.store%2FSites-TMaG-Site HTTP/1.1" 200 None
+2025-01-05 00:09:03,488 - INFO - Successfully processed https://www.taylormadegolf.com/
+2025-01-05 00:09:03,989 - INFO - [82/101] Processing https://www.moogmusic.com/ (Category: Synthesizer, Name: Moog)
+2025-01-05 00:09:03,989 - DEBUG - Starting new HTTPS connection (1): www.moogmusic.com:443
+2025-01-05 00:09:04,283 - DEBUG - https://www.moogmusic.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:04,283 - INFO - Permission granted to scrape: https://www.moogmusic.com/
+2025-01-05 00:09:04,788 - DEBUG - Starting new HTTPS connection (1): www.moogmusic.com:443
+2025-01-05 00:09:05,034 - DEBUG - https://www.moogmusic.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:05,039 - INFO - Successfully processed https://www.moogmusic.com/
+2025-01-05 00:09:05,541 - INFO - [83/101] Processing https://www.roland.com/ (Category: Synthesizer, Name: Roland)
+2025-01-05 00:09:05,541 - DEBUG - Starting new HTTPS connection (1): www.roland.com:443
+2025-01-05 00:09:06,232 - DEBUG - https://www.roland.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:06,233 - INFO - Permission granted to scrape: https://www.roland.com/
+2025-01-05 00:09:06,734 - DEBUG - Starting new HTTPS connection (1): www.roland.com:443
+2025-01-05 00:09:06,870 - DEBUG - https://www.roland.com:443 "GET / HTTP/1.1" 301 125
+2025-01-05 00:09:06,996 - DEBUG - https://www.roland.com:443 "GET /global/ HTTP/1.1" 200 None
+2025-01-05 00:09:07,012 - INFO - Successfully processed https://www.roland.com/
+2025-01-05 00:09:07,527 - INFO - [85/101] Processing https://usa.yamaha.com/ (Category: Synthesizer, Name: Yamaha)
+2025-01-05 00:09:07,528 - DEBUG - Starting new HTTPS connection (1): usa.yamaha.com:443
+2025-01-05 00:09:07,762 - DEBUG - https://usa.yamaha.com:443 "GET /robots.txt HTTP/1.1" 200 56
+2025-01-05 00:09:07,762 - INFO - Permission granted to scrape: https://usa.yamaha.com/
+2025-01-05 00:09:08,274 - DEBUG - Starting new HTTPS connection (1): usa.yamaha.com:443
+2025-01-05 00:09:08,738 - DEBUG - https://usa.yamaha.com:443 "GET / HTTP/1.1" 200 13217
+2025-01-05 00:09:08,759 - INFO - Successfully processed https://usa.yamaha.com/
+2025-01-05 00:09:09,260 - INFO - [86/101] Processing https://www.arturia.com/ (Category: Synthesizer, Name: Arturia)
+2025-01-05 00:09:09,260 - DEBUG - Starting new HTTPS connection (1): www.arturia.com:443
+2025-01-05 00:09:10,029 - DEBUG - https://www.arturia.com:443 "GET /robots.txt HTTP/1.1" 302 222
+2025-01-05 00:09:10,631 - DEBUG - https://www.arturia.com:443 "GET /page-not-found HTTP/1.1" 200 28193
+2025-01-05 00:09:10,762 - INFO - Permission granted to scrape: https://www.arturia.com/
+2025-01-05 00:09:11,264 - DEBUG - Starting new HTTPS connection (1): www.arturia.com:443
+2025-01-05 00:09:11,828 - DEBUG - https://www.arturia.com:443 "GET / HTTP/1.1" 200 3518
+2025-01-05 00:09:11,830 - INFO - Successfully processed https://www.arturia.com/
+2025-01-05 00:09:12,331 - INFO - [87/101] Processing https://www.elektron.se/ (Category: Synthesizer, Name: Unavailable)
+2025-01-05 00:09:12,332 - DEBUG - Starting new HTTPS connection (1): www.elektron.se:443
+2025-01-05 00:09:14,871 - DEBUG - https://www.elektron.se:443 "GET /robots.txt HTTP/1.1" 301 0
+2025-01-05 00:09:14,873 - DEBUG - Starting new HTTPS connection (1): elektron.se:443
+2025-01-05 00:09:16,430 - DEBUG - https://elektron.se:443 "GET /robots.txt HTTP/1.1" 200 151
+2025-01-05 00:09:16,430 - INFO - Permission granted to scrape: https://www.elektron.se/
+2025-01-05 00:09:16,932 - DEBUG - Starting new HTTPS connection (1): www.elektron.se:443
+2025-01-05 00:09:18,199 - DEBUG - https://www.elektron.se:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:09:18,200 - DEBUG - Starting new HTTPS connection (1): elektron.se:443
+2025-01-05 00:09:19,832 - DEBUG - https://elektron.se:443 "GET / HTTP/1.1" 200 33565
+2025-01-05 00:09:20,401 - INFO - Successfully processed https://www.elektron.se/
+2025-01-05 00:09:20,902 - INFO - [88/101] Processing https://www.sequential.com/ (Category: Synthesizer, Name: Sequential)
+2025-01-05 00:09:20,903 - DEBUG - Starting new HTTPS connection (1): www.sequential.com:443
+2025-01-05 00:09:22,425 - DEBUG - https://www.sequential.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:22,425 - INFO - Permission granted to scrape: https://www.sequential.com/
+2025-01-05 00:09:22,926 - DEBUG - Starting new HTTPS connection (1): www.sequential.com:443
+2025-01-05 00:09:25,233 - DEBUG - https://www.sequential.com:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:09:25,234 - DEBUG - Starting new HTTPS connection (1): sequential.com:443
+2025-01-05 00:09:26,279 - DEBUG - https://sequential.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:26,347 - INFO - Successfully processed https://www.sequential.com/
+2025-01-05 00:09:26,849 - INFO - [89/101] Processing https://novationmusic.com/ (Category: Synthesizer, Name: Novation)
+2025-01-05 00:09:26,850 - DEBUG - Starting new HTTPS connection (1): novationmusic.com:443
+2025-01-05 00:09:27,836 - DEBUG - https://novationmusic.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:27,839 - INFO - Permission granted to scrape: https://novationmusic.com/
+2025-01-05 00:09:28,339 - DEBUG - Starting new HTTPS connection (1): novationmusic.com:443
+2025-01-05 00:09:29,568 - DEBUG - https://novationmusic.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:29,628 - INFO - Successfully processed https://novationmusic.com/
+2025-01-05 00:09:30,133 - INFO - [90/101] Processing https://www.expedia.com/ (Category: Travel, Name: Expedia)
+2025-01-05 00:09:30,133 - DEBUG - Starting new HTTPS connection (1): www.expedia.com:443
+2025-01-05 00:09:30,488 - DEBUG - https://www.expedia.com:443 "GET /robots.txt HTTP/1.1" 200 1688
+2025-01-05 00:09:30,488 - INFO - Permission granted to scrape: https://www.expedia.com/
+2025-01-05 00:09:30,990 - DEBUG - Starting new HTTPS connection (1): www.expedia.com:443
+2025-01-05 00:09:31,217 - DEBUG - https://www.expedia.com:443 "GET / HTTP/1.1" 429 None
+2025-01-05 00:09:31,268 - ERROR - Request error for https://www.expedia.com/: 429 Client Error: Too Many Requests for url: https://www.expedia.com/
+2025-01-05 00:09:31,770 - INFO - [91/101] Processing https://www.booking.com/ (Category: Travel, Name: Booking.com)
+2025-01-05 00:09:31,771 - DEBUG - Starting new HTTPS connection (1): www.booking.com:443
+2025-01-05 00:09:33,274 - DEBUG - https://www.booking.com:443 "GET /robots.txt HTTP/1.1" 200 2704
+2025-01-05 00:09:33,276 - INFO - Permission granted to scrape: https://www.booking.com/
+2025-01-05 00:09:33,778 - DEBUG - Starting new HTTPS connection (1): www.booking.com:443
+2025-01-05 00:09:34,314 - DEBUG - https://www.booking.com:443 "GET / HTTP/1.1" 302 None
+2025-01-05 00:09:34,780 - DEBUG - https://www.booking.com:443 "GET /index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaLUCiAEBmAEJuAEKyAEF2AEB6AEBiAIBqAIDuAKdxOi7BsACAdICJDQ1MTZmYTgzLWRkMjUtNDM1ZS1hNzg5LTVkZDcyZTQ2NWZiZNgCBeACAQ&sid=06c85acbe1aa065a993d5619f5ef57e0&keep_landing=1&sb_price_type=total& HTTP/1.1" 200 None
+2025-01-05 00:09:35,515 - INFO - Successfully processed https://www.booking.com/
+2025-01-05 00:09:36,017 - INFO - [92/101] Processing https://www.airbnb.com/ (Category: Travel, Name: Airbnb)
+2025-01-05 00:09:36,017 - DEBUG - Starting new HTTPS connection (1): www.airbnb.com:443
+2025-01-05 00:09:36,198 - DEBUG - https://www.airbnb.com:443 "GET /robots.txt HTTP/1.1" 200 1469
+2025-01-05 00:09:36,198 - INFO - Permission granted to scrape: https://www.airbnb.com/
+2025-01-05 00:09:36,708 - DEBUG - Starting new HTTPS connection (1): www.airbnb.com:443
+2025-01-05 00:09:36,980 - DEBUG - https://www.airbnb.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:37,506 - INFO - Successfully processed https://www.airbnb.com/
+2025-01-05 00:09:38,008 - INFO - [93/101] Processing https://www.tripadvisor.com/ (Category: Travel, Name: Tripadvisor)
+2025-01-05 00:09:38,008 - DEBUG - Starting new HTTPS connection (1): www.tripadvisor.com:443
+2025-01-05 00:09:38,823 - DEBUG - https://www.tripadvisor.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:38,833 - INFO - Permission granted to scrape: https://www.tripadvisor.com/
+2025-01-05 00:09:39,338 - DEBUG - Starting new HTTPS connection (1): www.tripadvisor.com:443
+2025-01-05 00:09:39,721 - DEBUG - https://www.tripadvisor.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:40,007 - INFO - Successfully processed https://www.tripadvisor.com/
+2025-01-05 00:09:40,507 - INFO - [94/101] Processing https://www.kayak.com/ (Category: Travel, Name: Kayak)
+2025-01-05 00:09:40,507 - DEBUG - Starting new HTTPS connection (1): www.kayak.com:443
+2025-01-05 00:09:40,735 - DEBUG - https://www.kayak.com:443 "GET /robots.txt HTTP/1.1" 200 32490
+2025-01-05 00:09:40,745 - INFO - Permission granted to scrape: https://www.kayak.com/
+2025-01-05 00:09:41,246 - DEBUG - Starting new HTTPS connection (1): www.kayak.com:443
+2025-01-05 00:09:41,631 - DEBUG - https://www.kayak.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:09:46,247 - INFO - Successfully processed https://www.kayak.com/
+2025-01-05 00:09:46,756 - INFO - [95/101] Processing https://www.skyscanner.com/ (Category: Travel, Name: Skyscanner)
+2025-01-05 00:09:46,756 - DEBUG - Starting new HTTPS connection (1): www.skyscanner.com:443
+2025-01-05 00:09:48,148 - DEBUG - https://www.skyscanner.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:09:48,151 - INFO - Permission granted to scrape: https://www.skyscanner.com/
+2025-01-05 00:09:48,653 - DEBUG - Starting new HTTPS connection (1): www.skyscanner.com:443
+2025-01-05 00:09:49,466 - DEBUG - https://www.skyscanner.com:443 "GET / HTTP/1.1" 307 168
+2025-01-05 00:09:49,557 - DEBUG - https://www.skyscanner.com:443 "GET /sttc/px/captcha-v2/index.html?url=Lz8=&uuid=ab3b7d3d-cb2b-11ef-9362-e1e2b5566019&vid= HTTP/1.1" 200 708
+2025-01-05 00:09:49,558 - INFO - Successfully processed https://www.skyscanner.com/
+2025-01-05 00:09:50,058 - INFO - [97/101] Processing https://www.marriott.com/ (Category: Travel, Name: Marriott)
+2025-01-05 00:09:50,058 - DEBUG - Starting new HTTPS connection (1): www.marriott.com:443
+2025-01-05 00:09:50,346 - DEBUG - https://www.marriott.com:443 "GET /robots.txt HTTP/1.1" 200 634
+2025-01-05 00:09:50,349 - INFO - Permission granted to scrape: https://www.marriott.com/
+2025-01-05 00:09:50,851 - DEBUG - Starting new HTTPS connection (1): www.marriott.com:443
+2025-01-05 00:09:51,088 - DEBUG - https://www.marriott.com:443 "GET / HTTP/1.1" 403 370
+2025-01-05 00:09:51,089 - ERROR - Request error for https://www.marriott.com/: 403 Client Error: Forbidden for url: https://www.marriott.com/
+2025-01-05 00:09:51,591 - INFO - [98/101] Processing https://www.united.com/ (Category: Travel, Name: United Airlines)
+2025-01-05 00:09:51,591 - DEBUG - Starting new HTTPS connection (1): www.united.com:443
+2025-01-05 00:09:52,398 - DEBUG - https://www.united.com:443 "GET /robots.txt HTTP/1.1" 200 4137
+2025-01-05 00:09:52,399 - INFO - Permission granted to scrape: https://www.united.com/
+2025-01-05 00:09:52,901 - DEBUG - Starting new HTTPS connection (1): www.united.com:443
+2025-01-05 00:09:53,160 - DEBUG - https://www.united.com:443 "GET / HTTP/1.1" 200 9460
+2025-01-05 00:09:53,163 - INFO - Successfully processed https://www.united.com/
+2025-01-05 00:09:53,664 - INFO - [99/101] Processing https://www.delta.com/ (Category: Travel, Name: Delta Airlines)
+2025-01-05 00:09:53,665 - DEBUG - Starting new HTTPS connection (1): www.delta.com:443
+2025-01-05 00:09:54,511 - DEBUG - https://www.delta.com:443 "GET /robots.txt HTTP/1.1" 200 5098
+2025-01-05 00:09:54,512 - INFO - Permission granted to scrape: https://www.delta.com/
+2025-01-05 00:09:55,013 - DEBUG - Starting new HTTPS connection (1): www.delta.com:443
+2025-01-05 00:09:55,248 - DEBUG - https://www.delta.com:443 "GET / HTTP/1.1" 200 8501
+2025-01-05 00:09:55,254 - INFO - Successfully processed https://www.delta.com/
+2025-01-05 00:09:55,755 - INFO - [100/101] Processing https://bethesda.net/ (Category: VideoGame, Name: Bethesda Game Studios)
+2025-01-05 00:09:55,755 - DEBUG - Starting new HTTPS connection (1): bethesda.net:443
+2025-01-05 00:09:56,232 - DEBUG - https://bethesda.net:443 "GET /robots.txt HTTP/1.1" 200 128
+2025-01-05 00:09:56,232 - INFO - Permission granted to scrape: https://bethesda.net/
+2025-01-05 00:09:56,736 - DEBUG - Starting new HTTPS connection (1): bethesda.net:443
+2025-01-05 00:09:56,880 - DEBUG - https://bethesda.net:443 "GET / HTTP/1.1" 302 45
+2025-01-05 00:09:56,916 - DEBUG - https://bethesda.net:443 "GET /en HTTP/1.1" 200 None
+2025-01-05 00:09:56,917 - INFO - Successfully processed https://bethesda.net/
+2025-01-05 00:09:56,939 - INFO - Saved chunk 4 with 9823 rows to data\output\250105-0004\raw\website_words_chunk_4.csv
+2025-01-05 00:09:57,441 - INFO - [101/101] Processing https://www.square-enix.com/ (Category: VideoGame, Name: Square Enix)
+2025-01-05 00:09:57,442 - DEBUG - Starting new HTTPS connection (1): www.square-enix.com:443
+2025-01-05 00:09:59,930 - DEBUG - https://www.square-enix.com:443 "GET /robots.txt HTTP/1.1" 404 5651
+2025-01-05 00:09:59,930 - ERROR - Error fetching robots.txt from https://www.square-enix.com/robots.txt: 404 Client Error: Not Found for url: https://www.square-enix.com/robots.txt
+2025-01-05 00:09:59,930 - WARNING - Skipping https://www.square-enix.com/ due to robots.txt restrictions.
+2025-01-05 00:09:59,934 - INFO - Saved chunk 5 with 0 rows to data\output\250105-0004\raw\website_words_chunk_5.csv
+2025-01-05 00:10:00,436 - INFO - [103/101] Processing https://larian.com/ (Category: VideoGame, Name: Larian Studios)
+2025-01-05 00:10:00,436 - DEBUG - Starting new HTTPS connection (1): larian.com:443
+2025-01-05 00:10:00,907 - DEBUG - https://larian.com:443 "GET /robots.txt HTTP/1.1" 404 None
+2025-01-05 00:10:00,908 - ERROR - Error fetching robots.txt from https://larian.com/robots.txt: 404 Client Error: Not Found for url: https://larian.com/robots.txt
+2025-01-05 00:10:00,908 - WARNING - Skipping https://larian.com/ due to robots.txt restrictions.
+2025-01-05 00:10:01,409 - INFO - [104/101] Processing https://www.cdprojekt.com/ (Category: VideoGame, Name: Unavailable)
+2025-01-05 00:10:01,410 - DEBUG - Starting new HTTPS connection (1): www.cdprojekt.com:443
+2025-01-05 00:10:01,799 - DEBUG - https://www.cdprojekt.com:443 "GET /robots.txt HTTP/1.1" 404 106
+2025-01-05 00:10:01,800 - ERROR - Error fetching robots.txt from https://www.cdprojekt.com/robots.txt: 404 Client Error: Not Found for url: https://www.cdprojekt.com/robots.txt
+2025-01-05 00:10:01,800 - WARNING - Skipping https://www.cdprojekt.com/ due to robots.txt restrictions.
+2025-01-05 00:10:02,301 - INFO - [105/101] Processing https://www.obsidian.net/ (Category: VideoGame, Name: Obsidian Entertainment)
+2025-01-05 00:10:02,301 - DEBUG - Starting new HTTPS connection (1): www.obsidian.net:443
+2025-01-05 00:10:02,765 - DEBUG - https://www.obsidian.net:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:10:02,765 - INFO - Permission granted to scrape: https://www.obsidian.net/
+2025-01-05 00:10:03,275 - DEBUG - Starting new HTTPS connection (1): www.obsidian.net:443
+2025-01-05 00:10:03,957 - DEBUG - https://www.obsidian.net:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:10:03,988 - INFO - Successfully processed https://www.obsidian.net/
+2025-01-05 00:10:04,489 - INFO - [106/101] Processing https://www.fromsoftware.jp/ (Category: VideoGame, Name: FromSoftware)
+2025-01-05 00:10:04,489 - DEBUG - Starting new HTTPS connection (1): www.fromsoftware.jp:443
+2025-01-05 00:10:05,539 - DEBUG - https://www.fromsoftware.jp:443 "GET /robots.txt HTTP/1.1" 404 12485
+2025-01-05 00:10:05,539 - ERROR - Error fetching robots.txt from https://www.fromsoftware.jp/robots.txt: 404 Client Error: Not Found for url: https://www.fromsoftware.jp/robots.txt
+2025-01-05 00:10:05,539 - WARNING - Skipping https://www.fromsoftware.jp/ due to robots.txt restrictions.
+2025-01-05 00:10:06,041 - INFO - [107/101] Processing https://www.monolithsoft.co.jp/ (Category: VideoGame, Name: Monolith Soft)
+2025-01-05 00:10:06,041 - DEBUG - Starting new HTTPS connection (1): www.monolithsoft.co.jp:443
+2025-01-05 00:10:07,197 - DEBUG - https://www.monolithsoft.co.jp:443 "GET /robots.txt HTTP/1.1" 200 84
+2025-01-05 00:10:07,197 - INFO - Permission granted to scrape: https://www.monolithsoft.co.jp/
+2025-01-05 00:10:07,700 - DEBUG - Starting new HTTPS connection (1): www.monolithsoft.co.jp:443
+2025-01-05 00:10:08,247 - DEBUG - https://www.monolithsoft.co.jp:443 "GET / HTTP/1.1" 200 4609
+2025-01-05 00:10:08,258 - INFO - Successfully processed https://www.monolithsoft.co.jp/
+2025-01-05 00:10:08,760 - INFO - [108/101] Processing https://www.falcom.co.jp/ (Category: VideoGame, Name: Falcom)
+2025-01-05 00:10:08,761 - DEBUG - Starting new HTTPS connection (1): www.falcom.co.jp:443
+2025-01-05 00:10:09,932 - DEBUG - https://www.falcom.co.jp:443 "GET /robots.txt HTTP/1.1" 200 114
+2025-01-05 00:10:09,932 - INFO - Permission granted to scrape: https://www.falcom.co.jp/
+2025-01-05 00:10:10,445 - DEBUG - Starting new HTTPS connection (1): www.falcom.co.jp:443
+2025-01-05 00:10:11,529 - DEBUG - https://www.falcom.co.jp:443 "GET / HTTP/1.1" 200 21000
+2025-01-05 00:10:11,562 - INFO - Successfully processed https://www.falcom.co.jp/
+2025-01-05 00:10:12,064 - INFO - [109/101] Processing https://www.atlus.com/ (Category: VideoGame, Name: Atlus)
+2025-01-05 00:10:12,064 - DEBUG - Starting new HTTPS connection (1): www.atlus.com:443
+2025-01-05 00:10:12,451 - DEBUG - https://www.atlus.com:443 "GET /robots.txt HTTP/1.1" 403 199
+2025-01-05 00:10:12,451 - ERROR - Error fetching robots.txt from https://www.atlus.com/robots.txt: 403 Client Error: Forbidden for url: https://www.atlus.com/robots.txt
+2025-01-05 00:10:12,451 - WARNING - Skipping https://www.atlus.com/ due to robots.txt restrictions.
+2025-01-05 00:10:12,958 - INFO - Scraping completed. Compiling results into DataFrame.
+2025-01-05 00:11:07,754 - INFO - >======================================================>
+2025-01-05 00:11:07,754 - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-05 00:11:09,486 - INFO - Dependencies installed successfully!
+2025-01-05 00:11:09,505 - INFO - Version fetched for python: Python 3.12.8
+2025-01-05 00:11:10,282 - INFO - Version fetched for jupyter: Selected Jupyter core packages...
 IPython          : 8.28.0
 ipykernel        : 6.29.5
 ipywidgets       : not installed
@@ -46,165 +793,121 @@ nbformat         : not installed
 notebook         : not installed
 qtconsole        : not installed
 traitlets        : 5.14.3
-2025-01-01 20:57:04,898 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:57:04,907 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:57:04,937 - root - INFO - Removed Rows with Missing URL:
+2025-01-05 00:11:10,282 - INFO - Completed version retrieval for the stack.
+2025-01-05 00:11:10,338 - INFO - CSV file data\input\data.csv read successfully.
+2025-01-05 00:11:10,369 - INFO - Removed Rows with Missing URL:
    Category                  Name                      Url
   BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
+   Software                   PHP I love PHP and Composer!
    Computer                NVIDIA                      NaN
 Synthesizer   Teenage Engineering                      NaN
 Synthesizer             Behringer                      NaN
 Synthesizer https://www.korg.com/                      NaN
      Travel                Hilton  gttps://www.hilton.com/
   VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 20:57:23,975 - root - INFO - ======================================================
-2025-01-01 20:57:23,975 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:57:25,461 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:57:25,476 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:57:26,135 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
-IPython          : 8.28.0
-ipykernel        : 6.29.5
-ipywidgets       : not installed
-jupyter_client   : 8.6.3
-jupyter_core     : 5.7.2
-jupyter_server   : not installed
-jupyterlab       : not installed
-nbclient         : not installed
-nbconvert        : not installed
-nbformat         : not installed
-notebook         : not installed
-qtconsole        : not installed
-traitlets        : 5.14.3
-2025-01-01 20:57:26,135 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:57:26,147 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:57:26,173 - root - INFO - Removed Rows with Missing URL:
-   Category                  Name                      Url
-  BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
-   Computer                NVIDIA                      NaN
-Synthesizer   Teenage Engineering                      NaN
-Synthesizer             Behringer                      NaN
-Synthesizer https://www.korg.com/                      NaN
-     Travel                Hilton  gttps://www.hilton.com/
-  VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 20:57:31,804 - root - INFO - ======================================================
-2025-01-01 20:57:31,804 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:57:33,300 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:57:33,312 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:57:33,988 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
-IPython          : 8.28.0
-ipykernel        : 6.29.5
-ipywidgets       : not installed
-jupyter_client   : 8.6.3
-jupyter_core     : 5.7.2
-jupyter_server   : not installed
-jupyterlab       : not installed
-nbclient         : not installed
-nbconvert        : not installed
-nbformat         : not installed
-notebook         : not installed
-qtconsole        : not installed
-traitlets        : 5.14.3
-2025-01-01 20:57:33,988 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:57:34,001 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:57:34,028 - root - INFO - Removed Rows with Missing URL:
-   Category                  Name                      Url
-  BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
-   Computer                NVIDIA                      NaN
-Synthesizer   Teenage Engineering                      NaN
-Synthesizer             Behringer                      NaN
-Synthesizer https://www.korg.com/                      NaN
-     Travel                Hilton  gttps://www.hilton.com/
-  VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 20:58:11,739 - root - INFO - ======================================================
-2025-01-01 20:58:11,739 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:58:13,242 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:58:13,261 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:58:13,945 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
-IPython          : 8.28.0
-ipykernel        : 6.29.5
-ipywidgets       : not installed
-jupyter_client   : 8.6.3
-jupyter_core     : 5.7.2
-jupyter_server   : not installed
-jupyterlab       : not installed
-nbclient         : not installed
-nbconvert        : not installed
-nbformat         : not installed
-notebook         : not installed
-qtconsole        : not installed
-traitlets        : 5.14.3
-2025-01-01 20:58:13,945 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:58:13,967 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:58:14,005 - root - INFO - Removed Rows with Missing URL:
-   Category                  Name                      Url
-  BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
-   Computer                NVIDIA                      NaN
-Synthesizer   Teenage Engineering                      NaN
-Synthesizer             Behringer                      NaN
-Synthesizer https://www.korg.com/                      NaN
-     Travel                Hilton  gttps://www.hilton.com/
-  VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 20:59:04,782 - root - INFO - ======================================================
-2025-01-01 20:59:04,783 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 20:59:06,306 - root - INFO - Dependencies installed successfully!
-2025-01-01 20:59:06,325 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 20:59:06,993 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
-IPython          : 8.28.0
-ipykernel        : 6.29.5
-ipywidgets       : not installed
-jupyter_client   : 8.6.3
-jupyter_core     : 5.7.2
-jupyter_server   : not installed
-jupyterlab       : not installed
-nbclient         : not installed
-nbconvert        : not installed
-nbformat         : not installed
-notebook         : not installed
-qtconsole        : not installed
-traitlets        : 5.14.3
-2025-01-01 20:59:06,993 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 20:59:07,002 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 20:59:07,030 - root - INFO - Removed Rows with Missing URL:
-   Category                  Name                      Url
-  BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
-   Computer                NVIDIA                      NaN
-Synthesizer   Teenage Engineering                      NaN
-Synthesizer             Behringer                      NaN
-Synthesizer https://www.korg.com/                      NaN
-     Travel                Hilton  gttps://www.hilton.com/
-  VideoGame               BioWare  https//www.bioware.com/
-2025-01-01 21:00:23,164 - root - INFO - ======================================================
-2025-01-01 21:00:23,164 - root - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
-2025-01-01 21:00:24,664 - root - INFO - Dependencies installed successfully!
-2025-01-01 21:00:24,684 - root - INFO - Version fetched for python: Python 3.12.8
-2025-01-01 21:00:25,368 - root - INFO - Version fetched for jupyter: Selected Jupyter core packages...
-IPython          : 8.28.0
-ipykernel        : 6.29.5
-ipywidgets       : not installed
-jupyter_client   : 8.6.3
-jupyter_core     : 5.7.2
-jupyter_server   : not installed
-jupyterlab       : not installed
-nbclient         : not installed
-nbconvert        : not installed
-nbformat         : not installed
-notebook         : not installed
-qtconsole        : not installed
-traitlets        : 5.14.3
-2025-01-01 21:00:25,370 - root - INFO - Completed version retrieval for the stack.
-2025-01-01 21:00:25,380 - root - INFO - CSV file data\input\data.csv read successfully.
-2025-01-01 21:00:25,404 - root - INFO - Removed Rows with Missing URL:
-   Category                  Name                      Url
-  BoardGame     https://cmon.com/             CMON Limited
-   Computer                   PHP I love PHP and Composer!
-   Computer                NVIDIA                      NaN
-Synthesizer   Teenage Engineering                      NaN
-Synthesizer             Behringer                      NaN
-Synthesizer https://www.korg.com/                      NaN
-     Travel                Hilton  gttps://www.hilton.com/
-  VideoGame               BioWare  https//www.bioware.com/
+2025-01-05 00:11:10,378 - INFO - Output directory created: data\output\250105-0011
+2025-01-05 00:11:10,385 - INFO - [1/101] Processing https://www.leadergames.com/ (Category: BoardGame, Name: Leader Games)
+2025-01-05 00:11:10,389 - DEBUG - Starting new HTTPS connection (1): www.leadergames.com:443
+2025-01-05 00:11:50,474 - ERROR - Error fetching robots.txt from https://www.leadergames.com/robots.txt: HTTPSConnectionPool(host='www.leadergames.com', port=443): Max retries exceeded with url: /robots.txt (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001ADF3E9DA90>, 'Connection to www.leadergames.com timed out. (connect timeout=20)'))
+2025-01-05 00:11:50,474 - WARNING - Skipping https://www.leadergames.com/ due to robots.txt restrictions.
+2025-01-05 00:11:50,976 - INFO - [2/101] Processing https://www.indieboardsandcards.com/ (Category: BoardGame, Name: Indie Boards & Cards)
+2025-01-05 00:11:50,977 - DEBUG - Starting new HTTPS connection (1): www.indieboardsandcards.com:443
+2025-01-05 00:11:52,001 - DEBUG - https://www.indieboardsandcards.com:443 "GET /robots.txt HTTP/1.1" 301 None
+2025-01-05 00:11:52,004 - DEBUG - Starting new HTTPS connection (1): indieboardsandcards.com:443
+2025-01-05 00:11:52,175 - DEBUG - https://indieboardsandcards.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:11:52,176 - INFO - Permission granted to scrape: https://www.indieboardsandcards.com/
+2025-01-05 00:11:52,677 - DEBUG - Starting new HTTPS connection (1): www.indieboardsandcards.com:443
+2025-01-05 00:11:53,351 - DEBUG - https://www.indieboardsandcards.com:443 "GET / HTTP/1.1" 301 None
+2025-01-05 00:11:53,351 - DEBUG - Starting new HTTPS connection (1): indieboardsandcards.com:443
+2025-01-05 00:11:53,550 - DEBUG - https://indieboardsandcards.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:11:53,591 - INFO - Successfully processed https://www.indieboardsandcards.com/
+2025-01-05 00:11:54,097 - INFO - [3/101] Processing https://stonemaiergames.com/ (Category: BoardGame, Name: Stonemaier Games)
+2025-01-05 00:11:54,097 - DEBUG - Starting new HTTPS connection (1): stonemaiergames.com:443
+2025-01-05 00:11:54,652 - DEBUG - https://stonemaiergames.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:11:54,660 - INFO - Permission granted to scrape: https://stonemaiergames.com/
+2025-01-05 00:11:55,162 - DEBUG - Starting new HTTPS connection (1): stonemaiergames.com:443
+2025-01-05 00:11:55,621 - DEBUG - https://stonemaiergames.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:11:55,654 - INFO - Successfully processed https://stonemaiergames.com/
+2025-01-05 00:11:56,162 - INFO - [4/101] Processing https://www.theop.games/ (Category: BoardGame, Name: The OP)
+2025-01-05 00:11:56,162 - DEBUG - Starting new HTTPS connection (1): www.theop.games:443
+2025-01-05 00:11:56,624 - DEBUG - https://www.theop.games:443 "GET /robots.txt HTTP/1.1" 301 0
+2025-01-05 00:11:56,626 - DEBUG - Starting new HTTPS connection (1): theop.games:443
+2025-01-05 00:11:57,138 - DEBUG - https://theop.games:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:11:57,138 - INFO - Permission granted to scrape: https://www.theop.games/
+2025-01-05 00:11:57,650 - DEBUG - Starting new HTTPS connection (1): www.theop.games:443
+2025-01-05 00:11:57,774 - DEBUG - https://www.theop.games:443 "GET / HTTP/1.1" 301 0
+2025-01-05 00:11:57,775 - DEBUG - Starting new HTTPS connection (1): theop.games:443
+2025-01-05 00:11:57,913 - DEBUG - https://theop.games:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:11:57,937 - INFO - Successfully processed https://www.theop.games/
+2025-01-05 00:11:58,450 - INFO - [5/101] Processing https://www.fantasyflightgames.com/ (Category: BoardGame, Name: Fantasy Flight Games)
+2025-01-05 00:11:58,451 - DEBUG - Starting new HTTPS connection (1): www.fantasyflightgames.com:443
+2025-01-05 00:11:59,051 - DEBUG - https://www.fantasyflightgames.com:443 "GET /robots.txt HTTP/1.1" 302 None
+2025-01-05 00:11:59,090 - DEBUG - https://www.fantasyflightgames.com:443 "GET /en/robots.txt HTTP/1.1" 301 None
+2025-01-05 00:11:59,117 - DEBUG - https://www.fantasyflightgames.com:443 "GET /en/robots.txt/ HTTP/1.1" 403 None
+2025-01-05 00:11:59,134 - ERROR - Error fetching robots.txt from https://www.fantasyflightgames.com/robots.txt: 403 Client Error: Forbidden for url: https://www.fantasyflightgames.com/en/robots.txt/
+2025-01-05 00:11:59,134 - WARNING - Skipping https://www.fantasyflightgames.com/ due to robots.txt restrictions.
+2025-01-05 00:11:59,635 - INFO - [6/101] Processing https://www.renegadegamestudios.com/ (Category: BoardGame, Name: Renegade Game Studios)
+2025-01-05 00:11:59,636 - DEBUG - Starting new HTTPS connection (1): www.renegadegamestudios.com:443
+2025-01-05 00:11:59,984 - DEBUG - https://www.renegadegamestudios.com:443 "GET /robots.txt HTTP/1.1" 301 None
+2025-01-05 00:11:59,984 - DEBUG - Starting new HTTPS connection (1): renegadegamestudios.com:443
+2025-01-05 00:12:00,293 - DEBUG - https://renegadegamestudios.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:00,293 - INFO - Permission granted to scrape: https://www.renegadegamestudios.com/
+2025-01-05 00:12:00,800 - DEBUG - Starting new HTTPS connection (1): www.renegadegamestudios.com:443
+2025-01-05 00:12:00,953 - DEBUG - https://www.renegadegamestudios.com:443 "GET / HTTP/1.1" 301 None
+2025-01-05 00:12:00,964 - DEBUG - Starting new HTTPS connection (1): renegadegamestudios.com:443
+2025-01-05 00:12:01,379 - DEBUG - https://renegadegamestudios.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:12:01,433 - INFO - Successfully processed https://www.renegadegamestudios.com/
+2025-01-05 00:12:01,934 - INFO - [8/101] Processing https://strongholdgames.com/ (Category: BoardGame, Name: Stronghold Games)
+2025-01-05 00:12:01,934 - DEBUG - Starting new HTTPS connection (1): strongholdgames.com:443
+2025-01-05 00:12:03,451 - DEBUG - https://strongholdgames.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:03,452 - INFO - Permission granted to scrape: https://strongholdgames.com/
+2025-01-05 00:12:03,952 - DEBUG - Starting new HTTPS connection (1): strongholdgames.com:443
+2025-01-05 00:12:05,583 - DEBUG - https://strongholdgames.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:12:05,636 - INFO - Successfully processed https://strongholdgames.com/
+2025-01-05 00:12:06,143 - INFO - [9/101] Processing https://www.alderac.com/ (Category: BoardGame, Name: AEG)
+2025-01-05 00:12:06,143 - DEBUG - Starting new HTTPS connection (1): www.alderac.com:443
+2025-01-05 00:12:07,453 - DEBUG - https://www.alderac.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:07,453 - INFO - Permission granted to scrape: https://www.alderac.com/
+2025-01-05 00:12:07,959 - DEBUG - Starting new HTTPS connection (1): www.alderac.com:443
+2025-01-05 00:12:08,668 - DEBUG - https://www.alderac.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:12:08,924 - INFO - Successfully processed https://www.alderac.com/
+2025-01-05 00:12:09,426 - INFO - [10/101] Processing https://www.gamewright.com/ (Category: BoardGame, Name: Gamewright)
+2025-01-05 00:12:09,426 - DEBUG - Starting new HTTPS connection (1): www.gamewright.com:443
+2025-01-05 00:12:10,067 - DEBUG - https://www.gamewright.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:10,069 - INFO - Permission granted to scrape: https://www.gamewright.com/
+2025-01-05 00:12:10,570 - DEBUG - Starting new HTTPS connection (1): www.gamewright.com:443
+2025-01-05 00:12:10,757 - DEBUG - https://www.gamewright.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:12:10,760 - INFO - Successfully processed https://www.gamewright.com/
+2025-01-05 00:12:11,267 - INFO - [11/101] Processing https://www.python.org/ (Category: Unavailable, Name: Python)
+2025-01-05 00:12:11,268 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-05 00:12:11,437 - DEBUG - https://www.python.org:443 "GET /robots.txt HTTP/1.1" 200 297
+2025-01-05 00:12:11,437 - INFO - Permission granted to scrape: https://www.python.org/
+2025-01-05 00:12:11,938 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-05 00:12:12,371 - DEBUG - https://www.python.org:443 "GET / HTTP/1.1" 200 11679
+2025-01-05 00:12:12,402 - INFO - Successfully processed https://www.python.org/
+2025-01-05 00:12:12,903 - INFO - [12/101] Processing https://jupyter.org/ (Category: Software, Name: Jupyter)
+2025-01-05 00:12:12,904 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-05 00:12:14,237 - DEBUG - https://jupyter.org:443 "GET /robots.txt HTTP/1.1" 200 66
+2025-01-05 00:12:14,238 - INFO - Permission granted to scrape: https://jupyter.org/
+2025-01-05 00:12:14,739 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-05 00:12:14,850 - DEBUG - https://jupyter.org:443 "GET / HTTP/1.1" 200 5013
+2025-01-05 00:12:14,851 - INFO - Successfully processed https://jupyter.org/
+2025-01-05 00:12:15,363 - INFO - [13/101] Processing https://vuejs.org/ (Category: Software, Name: Vue.js)
+2025-01-05 00:12:15,363 - DEBUG - Starting new HTTPS connection (1): vuejs.org:443
+2025-01-05 00:12:15,701 - DEBUG - https://vuejs.org:443 "GET /robots.txt HTTP/1.1" 404 6250
+2025-01-05 00:12:15,717 - ERROR - Error fetching robots.txt from https://vuejs.org/robots.txt: 404 Client Error: Not Found for url: https://vuejs.org/robots.txt
+2025-01-05 00:12:15,717 - WARNING - Skipping https://vuejs.org/ due to robots.txt restrictions.
+2025-01-05 00:12:16,218 - INFO - [14/101] Processing https://nodejs.org/en (Category: Software, Name: Node.js)
+2025-01-05 00:12:16,219 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-05 00:12:16,751 - DEBUG - https://nodejs.org:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:16,751 - INFO - Permission granted to scrape: https://nodejs.org/en
+2025-01-05 00:12:17,254 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-05 00:12:17,593 - DEBUG - https://nodejs.org:443 "GET /en HTTP/1.1" 200 None
+2025-01-05 00:12:17,614 - INFO - Successfully processed https://nodejs.org/en
+2025-01-05 00:12:18,116 - INFO - [15/101] Processing https://laravel.com/ (Category: Software, Name: Laravel)
+2025-01-05 00:12:18,117 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-05 00:12:19,196 - DEBUG - https://laravel.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-05 00:12:19,196 - INFO - Permission granted to scrape: https://laravel.com/
+2025-01-05 00:12:19,701 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-05 00:12:19,791 - DEBUG - https://laravel.com:443 "GET / HTTP/1.1" 200 None
+2025-01-05 00:12:19,936 - INFO - Successfully processed https://laravel.com/

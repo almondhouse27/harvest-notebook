@@ -16,7 +16,7 @@
 
 ## Description
 
-A modular and interactive web scraper designed for flexibility and scalability, *Harvest Notebook* allows users to input a list of URLs, check robots.txt files for permissions, scrape data from websites, and generate a suite of comprehensive reports with the click of a button. Reports include page specifications, extracted data, and diagnostics of the scraping process. Built with a Jupyter Notebook interface for user interactivity and Python modules for robust core functionality and analytics.
+A modular and interactive web scraper designed for flexibility and scalability, *Harvest Notebook* allows users to input a list of URLs, check robots.txt files for permissions, scrape data from websites, and generate a suite of comprehensive reports with the click of a button. Reports include page specifications, extracted data, and diagnostics of the scraping process. Built with a Jupyter Notebook interface for user interactivity and Python libraries for robust core functionality and analytics.
 
 <!--=== === === === === === === === === -->
 
@@ -24,17 +24,19 @@ A modular and interactive web scraper designed for flexibility and scalability, 
 
 The following are required to run *Harvest Notebook*:
 
-* *Python >= 3.12*
 * *Jupyter Notebooks*
-* *Pandas\**
-* *Requests\**
+* *Python >= 3.12*
+* *Python Libraries\**
 
 \*The Python libraries required are specified in `requirements.txt`. 
 
-Note: There is a cell in the 'Notebook Setup' section of Harvest Notebook that calls the `install_requirements()` function from the `config.py` file, which handles the installation of the required libraries.
+Note: There is a cell in the 'Notebook Setup' section of Harvest Notebook that calls the `install_requirements()` function from the `config.py` file. That functions handles the installation of the required libraries.
+
+<!--=== === === === === === === === === -->
+
+## What Harvest Notebook Does
 
 <!--=== === === === === === === === === -->
 
 ## How To Use Harvest Notebook
-
 

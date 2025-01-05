@@ -5,6 +5,7 @@ import time
 from urllib.robotparser import RobotFileParser
 from urllib.parse import urlparse
 
+
 def robot_handshake(url, USER_AGENTS, TIMEOUT, PROXIES, DELAY):
     
     parsed_url = urlparse(url)
@@ -15,7 +16,8 @@ def robot_handshake(url, USER_AGENTS, TIMEOUT, PROXIES, DELAY):
     
     user_agent = random.choice(USER_AGENTS)
     proxies = random.choice(PROXIES) if PROXIES else None
-    base_url = '{0.scheme}://{0.netloc}'.format(urlparse(url))
+    #base_url = '{0.scheme}://{0.netloc}'.format(urlparse(url))
+    base_url = f'{parsed_url.scheme}://{parsed_url.netloc}'
     robots_url = f'{base_url}/robots.txt'
 
     try:
