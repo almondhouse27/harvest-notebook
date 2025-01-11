@@ -6,7 +6,7 @@ import pandas as pd
 from collections import Counter
 from bs4 import BeautifulSoup
 from src.permission import robot_handshake
-from src.utils import intermediate_save
+from src.output import intermediate_save
 
 
 DELAY = .5
@@ -27,7 +27,8 @@ CHUNK = 10
 
 
 def harvest(df, output_dir):
-    website_data = []
+    website_words_data = []
+    site_specifications_data = []
     chunk_count = 0
 
     for index, row in df.iterrows():
@@ -48,11 +49,31 @@ def harvest(df, output_dir):
                 # WEBSITE WORDS ===========================
                 word_counts = get_website_words(response.text)
                 for word, count in word_counts.items():
-                    website_data.append({
+                    website_words_data.append({
                         'Url': url,
                         'Word': word,
                         'WordCount': count
                     })
+                
+                # SITE SPECIFICATIONS =====================
+                site_specifications = get_site_specifications(response.text)
+                site_specifications_data.append({
+                    'Category': category,
+                    'Name': name,
+                    'Url': url,
+                    'WordCount': site_specifications['WordCount'],
+                    'ScriptCount': site_specifications['ScriptCount'],
+                    'StylesheetCount': site_specifications['StylesheetCount'],
+                    'LinkCount': site_specifications['LinkCount'],
+                    'FormCount': site_specifications['FormCount'],
+                    'ImageCount': site_specifications['ImageCount'],
+                    'VideoCount': site_specifications['VideoCount'],
+                    'IframeCount': site_specifications['IframeCount'],
+                    'MetaDescription': site_specifications['MetaDescription'],
+                    'Title': site_specifications['Title'],
+                    'CookieStatus': site_specifications['CookieStatus']
+                })
+
                 logging.info(f"Successfully processed {url}")
 
             except requests.RequestException as e:
@@ -66,19 +87,25 @@ def harvest(df, output_dir):
         if (index + 1) % CHUNK == 0 or (index + 1) == len(df):
             chunk_count += 1
 
-            if website_data:
-                intermediate_save(website_data, chunk_count, output_dir)
-            else:
-                logging.info(f"No data to save for chunk {chunk_count}.")
+            if website_words_data:
+                intermediate_save(website_words_data, chunk_count, output_dir, "ww")
+
+            if site_specifications_data:
+
+                intermediate_save(site_specifications_data, chunk_count, output_dir, "ss")
 
         time.sleep(DELAY)
     
-    if website_data:
-        logging.debug(f"Final save: chunk_count={chunk_count}, size={len(website_data)}")
-        intermediate_save(website_data, chunk_count, output_dir)
+    if website_words_data:
+        logging.debug(f"Final save: chunk_count={chunk_count}, size={len(website_words_data)}")
+        intermediate_save(website_words_data, chunk_count, output_dir, "ww")
+    
+    if site_specifications_data:
+        logging.debug(f"Final save: chunk_count={chunk_count}, size={len(site_specifications_data)}")
+        intermediate_save(site_specifications_data, chunk_count, output_dir, "ss")
 
     logging.info("Scraping completed. Compiling results into DataFrame.")
-    website_words = pd.DataFrame(website_data)
+    website_words = pd.DataFrame(website_words_data)
     return website_words
 
 
@@ -87,3 +114,33 @@ def get_website_words(html_content):
     text = soup.get_text(separator=' ')
     words = text.split()
     return Counter(words)
+
+def get_site_specifications(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    text = soup.get_text(separator=' ')
+    word_count = len(text.split())
+    script_count = len(soup.find_all('script'))
+    stylesheet_count = len(soup.find_all('link', rel="stylesheet"))
+    link_count = len(soup.find_all('a'))
+    form_count = len(soup.find_all('form'))
+    image_count = len(soup.find_all('img'))
+    video_count = len(soup.find_all('video'))
+    meta_description = soup.find('meta', attrs={'name': 'description'})
+    meta_description = meta_description['content'] if meta_description else None
+    title = soup.find('title').get_text() if soup.find('title') else None
+    iframe_count = len(soup.find_all('iframe'))
+    cookie_status = 'Yes' if soup.find_all('script', attrs={'src': lambda x: x and 'cookie' in x}) else 'No'
+
+    return {
+        'WordCount': word_count,
+        'ScriptCount': script_count,
+        'StylesheetCount': stylesheet_count,
+        'LinkCount': link_count,
+        'FormCount': form_count,
+        'ImageCount': image_count,
+        'VideoCount': video_count,
+        'IframeCount': iframe_count,
+        'MetaDescription': meta_description,
+        'Title': title,
+        'CookieStatus': cookie_status
+    }

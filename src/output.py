@@ -2,32 +2,8 @@ import glob
 import logging
 import os
 import shutil
-import subprocess
 import pandas as pd
 from datetime import datetime
-
-
-def complete(task):
-    print(f"{task} complete!")
-
-
-def get_versions(STACK):
-
-    # @nestedFunctionStart
-    def get_version(command):
-        try:
-            version = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-            version_info = version.stdout.strip() if version.stdout else version.stderr.strip()
-            logging.info(f"Version fetched for {command[0]}: {version_info}")
-            return version_info
-        except Exception as e:
-            logging.error(f"Error fetching version for {command}: {e}")
-            return f"Error fetching version for {command}: {e}"
-        
-    # @parentFunctionStart
-    versions = {command[0]: get_version(command) for command in STACK}
-    logging.info("Completed version retrieval for the stack.")
-    return versions
 
 
 def create_output_directory(OUTPUT):
@@ -52,40 +28,58 @@ def create_output_directory(OUTPUT):
         return f"Failed to create output directory: {e}"
     
 
-def intermediate_save(website_data, chunk_count, output_dir):
+def intermediate_save(data, chunk_count, output_dir, data_type):
     raw_dir = os.path.join(output_dir, "raw")
     os.makedirs(raw_dir, exist_ok=True)
 
-    file_name = f"website_words_chunk_{chunk_count}.csv"
+    # file_name = f"website_words_chunk_{chunk_count}.csv"
+    if data_type == "ww":
+        file_name = f"website_words_chunk_{chunk_count}.csv"
+    elif data_type == "ss":
+        file_name = f"site_specifications_chunk_{chunk_count}.csv"
+    else:
+        raise ValueError("Unknown data type")
+
     file_path = os.path.join(raw_dir, file_name)
 
-    pd.DataFrame(website_data).to_csv(file_path, index=False)
+    pd.DataFrame(data).to_csv(file_path, index=False)
 
-    logging.info(f"Saved chunk {chunk_count} with {len(website_data)} rows to {file_path}")
-    print(f"Saved chunk {chunk_count} with {len(website_data)} rows to {file_path}")
+    logging.info(f"Saved chunk {chunk_count} with {len(data)} rows to {file_path}")
+    print(f"Saved chunk {chunk_count} with {len(data)} rows to {file_path}")
     
-    website_data.clear()
+    data.clear()
 
 
 def stitch_chunks(output_dir):
     raw_dir = os.path.join(output_dir, "raw")
-    output_file = os.path.join(output_dir, "website_words.csv")
+    website_words_output_file = os.path.join(output_dir, "website_words.csv")
+    site_specifications_output_file = os.path.join(output_dir, "site_specifications.csv")
 
-    chunk_files = glob.glob(os.path.join(raw_dir, "website_words_chunk_*.csv"))
-    chunk_files.sort()
+    website_words_chunk_files = glob.glob(os.path.join(raw_dir, "website_words_chunk_*.csv"))
+    site_specifications_chunk_files = glob.glob(os.path.join(raw_dir, "site_specifications_chunk_*.csv"))
+    
+    website_words_chunk_files.sort()
+    site_specifications_chunk_files.sort()
 
-    website_words = pd.concat([pd.read_csv(chunk_file) for chunk_file in chunk_files], ignore_index=True)
-    website_words.to_csv(output_file, index=False)
+    website_words_df = pd.concat([pd.read_csv(chunk_file) for chunk_file in website_words_chunk_files], ignore_index=True)
+    website_words_df.to_csv(website_words_output_file, index=False)
 
-    logging.info(f"All chunks stitched together into {output_file}")
-    print(f"All chunks stitched together into {output_file}")
+    site_specifications_df = pd.concat([pd.read_csv(chunk_file) for chunk_file in site_specifications_chunk_files], ignore_index=True)
+    site_specifications_df.to_csv(site_specifications_output_file, index=False)
+
+    logging.info(f"All website words chunks stitched together into {website_words_output_file}")
+    print(f"All website words chunks stitched together into {website_words_output_file}")
+
+    logging.info(f"All site specifications chunks stitched together into {site_specifications_output_file}")
+    print(f"All site specifications chunks stitched together into {site_specifications_output_file}")
 
     shutil.rmtree(raw_dir)
+    
     logging.info(f"Raw directory and files removed: {raw_dir}")
     print(f"Raw directory and files removed: {raw_dir}")
 
 
-def process_outputs(output_dir):
+def sort_outputs(output_dir):
     csv_files = glob.glob(os.path.join(output_dir, "*.csv"))
 
     if not csv_files:
