@@ -1,5 +1,4 @@
 import logging
-import os
 import random
 import requests
 import time
@@ -7,6 +6,7 @@ import pandas as pd
 from collections import Counter
 from bs4 import BeautifulSoup
 from src.permission import robot_handshake
+from src.utils import intermediate_save
 
 
 DELAY = .5
@@ -23,28 +23,10 @@ PROXIES = [
     # "http://proxy3.example.com:8080",
     # "http://proxy4.example.com:8080",
 ]
-CHUNK = 20
+CHUNK = 10
 
 
-def get_website_words(html_content):
-    soup = BeautifulSoup(html_content, 'html.parser')
-    text = soup.get_text(separator=' ')
-    words = text.split()
-    return Counter(words)
-
-
-def intermediate_save(website_data, chunk_count, reports_directory):
-    raw_directory = os.path.join(reports_directory, "raw")
-    os.makedirs(raw_directory, exist_ok=True)
-    file_name = f"website_words_chunk_{chunk_count}.csv"
-    file_path = os.path.join(raw_directory, file_name)
-    pd.DataFrame(website_data).to_csv(file_path, index=False)
-    logging.info(f"Saved chunk {chunk_count} with {len(website_data)} rows to {file_path}")
-    print(f"Saved chunk {chunk_count} with {len(website_data)} rows to {file_path}")
-    website_data.clear()
-
-
-def harvest(df, reports_directory):
+def harvest(df, output_dir):
     website_data = []
     chunk_count = 0
 
@@ -53,6 +35,7 @@ def harvest(df, reports_directory):
         logging.info(f"[{index+1}/{len(df)}] Processing {url} (Category: {category}, Name: {name})")
 
         if robot_handshake(url, USER_AGENTS, TIMEOUT, PROXIES, DELAY):
+
             try:
                 user_agent = random.choice(USER_AGENTS)
                 proxy = random.choice(PROXIES) if PROXIES else None
@@ -61,7 +44,6 @@ def harvest(df, reports_directory):
 
                 response = requests.get(url, headers=headers, timeout=TIMEOUT, proxies=proxies)
                 response.raise_for_status()
-
 
                 # WEBSITE WORDS ===========================
                 word_counts = get_website_words(response.text)
@@ -73,7 +55,6 @@ def harvest(df, reports_directory):
                     })
                 logging.info(f"Successfully processed {url}")
 
-
             except requests.RequestException as e:
                 logging.error(f"Request error for {url}: {e}")
             except Exception as e:
@@ -84,10 +65,25 @@ def harvest(df, reports_directory):
 
         if (index + 1) % CHUNK == 0 or (index + 1) == len(df):
             chunk_count += 1
-            intermediate_save(website_data, chunk_count, reports_directory)
+
+            if website_data:
+                intermediate_save(website_data, chunk_count, output_dir)
+            else:
+                logging.info(f"No data to save for chunk {chunk_count}.")
 
         time.sleep(DELAY)
+    
+    if website_data:
+        logging.debug(f"Final save: chunk_count={chunk_count}, size={len(website_data)}")
+        intermediate_save(website_data, chunk_count, output_dir)
 
     logging.info("Scraping completed. Compiling results into DataFrame.")
     website_words = pd.DataFrame(website_data)
     return website_words
+
+
+def get_website_words(html_content):
+    soup = BeautifulSoup(html_content, 'html.parser')
+    text = soup.get_text(separator=' ')
+    words = text.split()
+    return Counter(words)

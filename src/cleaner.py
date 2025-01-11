@@ -1,7 +1,5 @@
 import logging
 
-""" Nested functions just because... """
-
 
 def handle_missing_data(df, URL_CHECK):
 
@@ -42,8 +40,7 @@ def handle_missing_data(df, URL_CHECK):
         print("---------------------")
         print(removed_input_rows)
         print("---------------------")
-        print("*Replaced all missing Category and Name values with 'Unavailable'\n")
-        print()
+        print("\n*Replaced all missing Category and Name values with 'Unavailable'\n\n")
         logging.info("Removed Rows with Missing URL:\n%s", removed_input_rows.to_string(index=False))
         return df, removed_input_rows
 

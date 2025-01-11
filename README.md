@@ -1,7 +1,7 @@
 
 <!--=== === === === === === === === === -->
 
-<div><img src="src/assets/jk-hn.png" alt="Harvest Notebook tree logo by John Kneipp" width="822"/></div>
+<div><img src="src/assets/harvest-notebook.png" alt="Harvest Notebook logo by David Blessent" width="822"/></div>
 
 <!--=== === === === === === === === === -->
 
