@@ -1,51 +1,110 @@
-Category,Name,Urls
-BoardGame,Leader Games,https://www.leadergames.com/
-BoardGame,Indie Boards & Cards,https://www.indieboardsandcards.com/
+,Category,Name,Urls
+BoardGame,Leader Games,https://leadergames.com/
+BoardGame,Indie Boards & Cards,https://indieboardsandcards.com/
 BoardGame,Stonemaier Games,https://stonemaiergames.com/
-BoardGame,The OP,https://www.theop.games/
-BoardGame,Fantasy Flight Games,https://www.fantasyflightgames.com/
-BoardGame,Renegade Game Studios,https://www.renegadegamestudios.com/
-BoardGame,CMON Limited,https://cmon.com/
+BoardGame,The OP,https://theop.games/
+BoardGame,Fantasy Flight Games,https://fantasyflightgames.com/
+BoardGame,Renegade Game Studios,https://renegadegamestudios.com/
+BoardGame,https://cmon.com/,CMON Limited
 BoardGame,Stronghold Games,https://strongholdgames.com/
-BoardGame,AEG,https://www.alderac.com/
-BoardGame,Gamewright,https://www.gamewright.com/
-,Python,https://www.python.org/
-Computer,Jupyter,https://jupyter.org/
-Computer,Vue.js,https://vuejs.org/
-Computer,Node.js,https://nodejs.org/en
-Computer,Laravel,https://laravel.com/
-Computer,PHP,I love PHP and Composer!
-Computer,Packagist,https://packagist.org/
-Computer,MySQL,https://www.mysql.com/
-Computer,GitHub,https://github.com/
-Computer,Go,https://go.dev/
-Computer,Dell,https://www.dell.com/
-Computer,HP,https://www.hp.com/
-Computer,Lenovo,https://www.lenovo.com/
-Computer,Apple,https://www.apple.com/
-,Asus,https://www.asus.com/
-Computer,Acer,https://www.acer.com/
-Computer,MSI,https://www.msi.com/
-Computer,Intel,https://www.intel.com/
-Computer,AMD,https://www.amd.com/
+BoardGame,AEG,https://alderac.com/
+BoardGame,Gamewright,https://gamewright.com/
+,Python,https://python.org/
+Software,Jupyter,https://jupyter.org/
+Software,Vue.js,https://vuejs.org/
+Software,Node.js,https://nodejs.org/en
+Software,Laravel,https://laravel.com/
+Software,PHP,I love PHP and Composer!
+Software,Packagist,https://packagist.org/
+Software,MySQL,https://mysql.com/
+Software,GitHub,https://github.com/
+Software,Go,https://go.dev/
+Computer,Dell,https://dell.co/
+Computer,HP,https://hp.com/
+Computer,Lenovo,https://lenovo.com/
+Computer,Apple,https://apple.com/
+,Asus,https://asus.com/
+Computer,Acer,https://acer.com/
+Computer,MSI,https://msi.com/
+Computer,Intel,https://intel.com/
+Computer,AMD,https://amd.com/
 Computer,NVIDIA,
+Electronics,Samsung,https://samsung.com/
+Electronics,Sony,https://sony.com/
+Electronics,LG,https://lg.com/
+Electronics,Panasonic,https://panasonic.com/
+Electronics,Philips,https://philips.com/
+Electronics,Toshiba,https://toshiba.com/
+Electronics,Sharp,https://sharpusa.com/
+Electronics,Lenovo,https://lenovo.com/
+Electronics,HP,https://hp.com/
+Guitars,Fender,https://fender.com/
+Guitars,Gibson,https://gibson.com/
+Guitars,Ibanez,https://ibanez.com/
+Guitars,Epiphone,https://epiphone.com/
+Guitars,PRS Guitars,https://prsguitars.com/
+Guitars,Rickenbacker,https://rickenbacker.com/
+Guitars,Gretsch,https://gretschguitars.com/
+Guitars,Jackson Guitars,https://jacksonguitars.com/
+Guitars,,https://deanguitars.com/
+Guitars,Schecter,https://schecterguitars.com/
+InvestmentFirms,BlackRock,https://blackrock.com/
+InvestmentFirms,Vanguard,https://investor.vanguard.com/
+InvestmentFirms,Fidelity,https://fidelity.com/
+InvestmentFirms,Charles Schwab,https://schwab.com/
+InvestmentFirms,Goldman Sachs,https://goldmansachs.com/
+InvestmentFirms,J.P. Morgan,https://jpmorgan.com/
+InvestmentFirms,State Street,https://ssga.com/
+InvestmentFirms,Franklin Templeton,https://franklintempleton.com/
+InvestmentFirms,Invesco,https://invesco.com/
+InvestmentFirms,Blackstone,https://blackstone.com/
+Publishing,Penguin Random House,https://penguinrandomhouse.com/
+Publishing,HarperCollins,https://harpercollins.com/
+Publishing,Simon & Schuster,https://simonandschuster.com/
+Publishing,Macmillan,https://us.macmillan.com/
+Publishing,Hachette Book Group,https://hachettebookgroup.com/
+Publishing,Bloomsbury,https://bloomsbury.com/
+Publishing,Scholastic,https://scholastic.com/
+Publishing,Wiley,https://wiley.com/
+Publishing,Oxford University Press,https://global.oup.com/
+Publishing,Princeton University Press,https://press.princeton.edu/
+SportsGear,Nike,https://nike.com/
+SportsGear,Adidas,https://adidas.com/
+SportsGear,Under Armour,https://underarmour.com/
+SportsGear,Puma,https://puma.com/
+SportsGear,Reebok,https://reebok.com/
+SportsGear,New Balance,https://newbalance.com/
+SportsGear,Columbia Sportswear,https://columbia.com/
+SportsGear,Nike Golf,https://nikegolf.com/
+SportsGear,Callaway Golf,https://callawaygolf.com/
+SportsGear,TaylorMade,https://taylormadegolf.com/
 Synthesizer,Teenage Engineering,
 Synthesizer,Behringer,
-Synthesizer,Moog,https://www.moogmusic.com/
-Synthesizer,Roland,https://www.roland.com/
-Synthesizer,Korg,https://www.korg.com/
+Synthesizer,Moog,https://moogmusic.com/
+Synthesizer,Roland,https://roland.com/
+Synthesizer,https://korg.com/,
 Synthesizer,Yamaha,https://usa.yamaha.com/
-Synthesizer,Arturia,https://www.arturia.com/
-Synthesizer,,https://www.elektron.se/
-Synthesizer,Sequential,https://www.sequential.com/
+Synthesizer,Arturia,https://arturia.com/
+Synthesizer,,https://elektron.se/
+Synthesizer,Sequential,https://sequential.com/
 Synthesizer,Novation,https://novationmusic.com/
+Travel,Expedia,https://expedia.com/
+Travel,Booking.com,https://booking.com/
+Travel,Airbnb,https://airbnb.com/
+Travel,Tripadvisor,https://tripadvisor.com/
+Travel,Kayak,https://kayak.com/
+Travel,Skyscanner,https://skyscanner.com/
+Travel,Hilton,gttps://hilton.com/
+Travel,Marriott,https://marriott.com/
+Travel,United Airlines,https://united.com/
+Travel,Delta Airlines,https://delta.com/
 VideoGame,Bethesda Game Studios,https://bethesda.net/
-VideoGame,Square Enix,https://www.square-enix.com/
-VideoGame,BioWare,https://www.bioware.com/
+VideoGame,Square Enix,https://square-enix.com/
+VideoGame,BioWare,https//bioware.com/
 VideoGame,Larian Studios,https://larian.com/
-VideoGame,,https://www.cdprojekt.com/
-VideoGame,Obsidian Entertainment,https://www.obsidian.net/
-VideoGame,FromSoftware,https://www.fromsoftware.jp/
-VideoGame,Monolith Soft,https://www.monolithsoft.co.jp/
-VideoGame,Falcom,https://www.falcom.co.jp/
-VideoGame,Atlus,https://www.atlus.com/
+VideoGame,,https://cdprojekt.com/
+VideoGame,Obsidian Entertainment,https://obsidian.net/
+VideoGame,FromSoftware,https://fromsoftware.jp/
+VideoGame,Monolith Soft,https://monolithsoft.co.jp/
+VideoGame,Falcom,https://falcom.co.jp/
+VideoGame,Atlus,https://atlus.com/

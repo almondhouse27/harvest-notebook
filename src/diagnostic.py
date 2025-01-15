@@ -5,10 +5,6 @@ import shutil
 from datetime import datetime
 
 
-def complete(task):
-    print(f"{task} complete!")
-
-
 def process_diagnostic_log(LOG, ARCHIVE, output_dir):
     start_time = None
     end_time = None
@@ -88,10 +84,12 @@ def process_diagnostic_log(LOG, ARCHIVE, output_dir):
         logging.info(f"Log file archived and clearing.")
 
         shutil.copy(LOG, ARCHIVE)
+        transfer_app_log(LOG, output_dir)
         with open(LOG, 'w'):
             pass
 
         return diagnostic_log_data
+    
 
 def parse_log_line(line):
     parts = line.split(' - ', 2)
@@ -113,3 +111,10 @@ def calculate_time_difference(start_time_str, end_time_str):
     start_time = datetime.strptime(start_time_str, "%Y-%m-%d %H:%M:%S,%f")
     end_time = datetime.strptime(end_time_str, "%Y-%m-%d %H:%M:%S,%f")
     return (end_time - start_time).total_seconds()
+
+
+def transfer_app_log(LOG, output_dir):
+    transfer = os.path.join(output_dir, "app.log")
+    shutil.copy(LOG, transfer)
+    logging.info(f"Copied {LOG} to {transfer}")
+    print(f"Copied {LOG} to {transfer}")

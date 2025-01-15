@@ -23,7 +23,7 @@ PROXIES = [
     # "http://proxy3.example.com:8080",
     # "http://proxy4.example.com:8080",
 ]
-CHUNK = 10
+CHUNK = 5
 
 
 def harvest(df, output_dir):
@@ -78,6 +78,7 @@ def harvest(df, output_dir):
 
             except requests.RequestException as e:
                 logging.error(f"Request error for {url}: {e}")
+                
             except Exception as e:
                 logging.error(f"Error scraping {url}: {e}")
 
@@ -115,6 +116,7 @@ def get_website_words(html_content):
     words = text.split()
     return Counter(words)
 
+
 def get_site_specifications(html_content):
     soup = BeautifulSoup(html_content, 'html.parser')
     text = soup.get_text(separator=' ')
@@ -125,10 +127,10 @@ def get_site_specifications(html_content):
     form_count = len(soup.find_all('form'))
     image_count = len(soup.find_all('img'))
     video_count = len(soup.find_all('video'))
+    iframe_count = len(soup.find_all('iframe'))
     meta_description = soup.find('meta', attrs={'name': 'description'})
     meta_description = meta_description['content'] if meta_description else None
     title = soup.find('title').get_text() if soup.find('title') else None
-    iframe_count = len(soup.find_all('iframe'))
     cookie_status = 'Yes' if soup.find_all('script', attrs={'src': lambda x: x and 'cookie' in x}) else 'No'
 
     return {

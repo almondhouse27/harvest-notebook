@@ -1,7 +1,11 @@
+logging.info(">======================================================>")
+
 logging.info("Dependencies installed successfully!")
 logging.error(f"Error installing dependencies: {e}")
-logging.info(">======================================================>")
+
 logging.info(f"Logging setup complete. Logs will be saved to {log_file}.")
+
+
 logging.info(f"Scraping report generated and saved to {output_file}")
 logging.info(f"Log file archived and clearing.")
 logging.info(f"Output directory created: {output_dir}")
@@ -11,7 +15,7 @@ logging.info(f"All website words chunks stitched together into {website_words_ou
 logging.info(f"All site specifications chunks stitched together into {site_specifications_output_file}")
 logging.info(f"Raw directory and files removed: {raw_dir}")
 logging.info(f"No CSV files found in {output_dir}.")
-logging.info(f"Sorted and saved file: {file}")
+logging.info(f"Basic report processing complete for file: {file}")
 logging.error(f"Error processing file {file}: {e}")
 logging.error(f"Invalid URL: {url}")
 logging.info(f"Permission granted to scrape: {url}")

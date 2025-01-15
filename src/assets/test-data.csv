@@ -1,4 +1,14 @@
 Category,Name,Url
+ArtMuseums,The Louvre,https://www.louvre.fr/
+ArtMuseums,The Metropolitan Museum of Art,https://www.metmuseum.org/
+ArtMuseums,The British Museum,https://www.britishmuseum.org/
+ArtMuseums,The Vatican Museums,https://www.museivaticani.va/
+ArtMuseums,The Art Institute of Chicago,https://www.artic.edu/
+ArtMuseums,The Getty Center,https://www.getty.edu/
+ArtMuseums,Museum of Modern Art (MoMA),https://www.moma.org/
+ArtMuseums,Tate Modern,https://www.tate.org.uk/visit/tate-modern
+ArtMuseums,Museo del Prado,https://www.museodelprado.es/
+ArtMuseums,National Gallery of Art,https://www.nga.gov/
 AutoManufacturers,Toyota,https://www.toyota.com/
 AutoManufacturers,Volkswagen,https://www.vw.com/
 AutoManufacturers,Ford,https://www.ford.com/
@@ -86,6 +96,16 @@ Electronics,Panasonic,https://www.panasonic.com/
 Electronics,Philips,https://www.philips.com/
 Electronics,Toshiba,https://www.toshiba.com/
 Electronics,Sharp,https://www.sharpusa.com/
+FastFood,McDonald's,https://www.mcdonalds.com/
+FastFood,Burger King,https://www.bk.com/
+FastFood,Wendy's,https://www.wendys.com/
+FastFood,Taco Bell,https://www.tacobell.com/
+FastFood,Subway,https://www.subway.com/
+FastFood,KFC,https://www.kfc.com/
+FastFood,Chick-fil-A,https://www.chick-fil-a.com/
+FastFood,Popeyes,https://www.popeyes.com/
+FastFood,Jack in the Box,https://www.jackinthebox.com/
+FastFood,Sonic,https://www.sonicdrivein.com/
 FederalDepartments,Department of Agriculture,https://www.usda.gov/
 FederalDepartments,Department of Commerce,https://www.commerce.gov/
 FederalDepartments,Department of Defense,https://www.defense.gov/
@@ -97,6 +117,25 @@ FederalDepartments,Department of Housing and Urban Development,https://www.hud.g
 FederalDepartments,Department of the Interior,https://www.doi.gov/
 FederalDepartments,Department of Justice,https://www.justice.gov/
 FederalDepartments,Department of Labor,https://www.dol.gov/
+GardenSuppliers,The Home Depot,https://www.homedepot.com/
+GardenSuppliers,Lowe's,https://www.lowes.com/
+GardenSuppliers,Gardeners Supply Company,https://www.gardeners.com/
+GardenSuppliers,True Value,https://www.truevalue.com/
+GardenSuppliers,Menards,https://www.menards.com/
+GardenSuppliers,Ace Hardware,https://www.acehardware.com/
+GardenSuppliers,Park Seed,https://www.parkseed.com/
+GardenSuppliers,Burpee,https://www.burpee.com/
+GardenSuppliers,Johnny's Selected Seeds,https://www.johnnyseeds.com/
+GardenSuppliers,Ferry-Morse,https://www.ferry-morse.com/
+Grocery,Kroger,https://www.kroger.com/
+Grocery,Costco,https://www.costco.com/
+Grocery,Albertsons,https://www.albertsons.com/
+Grocery,Aldi,https://www.aldi.us/
+Grocery,Publix,https://www.publix.com/
+Grocery,Whole Foods Market,https://www.wholefoodsmarket.com/
+Grocery,Trader Joe's,https://www.traderjoes.com/
+Grocery,Hy-Vee,https://www.hy-vee.com/
+Grocery,Meijer,https://www.meijer.com/
 Guitars,Fender,https://www.fender.com/
 Guitars,Gibson,https://www.gibson.com/
 Guitars,Ibanez,https://www.ibanez.com/
@@ -117,6 +156,16 @@ HistoryMuseums,Atlanta History Center,https://www.atlantahistorycenter.com/
 HistoryMuseums,Missouri History Museum,https://mohistory.org/
 HistoryMuseums,Detroit Historical Museum,https://detroithistorical.org/
 HistoryMuseums,HistoryMiami Museum,https://www.historymiami.org/
+Importers,Global Sources,https://www.globalsources.com/
+Importers,Alibaba,https://www.alibaba.com/
+Importers,TradeIndia,https://www.tradeindia.com/
+Importers,ThomasNet,https://www.thomasnet.com/
+Importers,EC21,https://www.ec21.com/
+Importers,Made-in-China,https://www.made-in-china.com/
+Importers,ExportHub,https://www.exporthub.com/
+Importers,IndiaMART,https://www.indiamart.com/
+Importers,WorldWide Brands,https://www.worldwidebrands.com/
+Importers,Kompass,https://www.kompass.com/
 InvestmentFirms,BlackRock,https://www.blackrock.com/
 InvestmentFirms,Vanguard,https://investor.vanguard.com/
 InvestmentFirms,Fidelity,https://www.fidelity.com/
@@ -127,6 +176,46 @@ InvestmentFirms,State Street,https://www.ssga.com/
 InvestmentFirms,Franklin Templeton,https://www.franklintempleton.com/
 InvestmentFirms,Invesco,https://www.invesco.com/
 InvestmentFirms,Blackstone,https://www.blackstone.com/
+NationalLaboratories,Oak Ridge National Laboratory,https://www.ornl.gov/
+NationalLaboratories,Los Alamos National Laboratory,https://www.lanl.gov/
+NationalLaboratories,Livermore National Laboratory,https://www.llnl.gov/
+NationalLaboratories,Sandia National Laboratories,https://www.sandia.gov/
+NationalLaboratories,Argonne National Laboratory,https://www.anl.gov/
+NationalLaboratories,Fermilab,https://www.fnal.gov/
+NationalLaboratories,Pacific Northwest National Laboratory,https://www.pnnl.gov/
+NationalLaboratories,Brookhaven National Laboratory,https://www.bnl.gov/
+NationalLaboratories,Idaho National Laboratory,https://www.inl.gov/
+NationalLaboratories,Ames National Laboratory,https://www.ameslab.gov/
+Pharmaceutical,Johnson & Johnson,https://www.jnj.com/
+Pharmaceutical,Pfizer,https://www.pfizer.com/
+Pharmaceutical,Merck & Co.,https://www.merck.com/
+Pharmaceutical,Roche,https://www.roche.com/
+Pharmaceutical,Novartis,https://www.novartis.com/
+Pharmaceutical,Sanofi,https://www.sanofi.com/
+Pharmaceutical,AstraZeneca,https://www.astrazeneca.com/
+Pharmaceutical,GlaxoSmithKline,https://www.gsk.com/
+Pharmaceutical,Bristol Myers Squibb,https://www.bms.com/
+Pharmaceutical,AbbVie,https://www.abbvie.com/
+PollingAgencies,Gallup,https://www.gallup.com/
+PollingAgencies,Pew Research Center,https://www.pewresearch.org/
+PollingAgencies,Harris Poll,https://theharrispoll.com/
+PollingAgencies,YouGov,https://yougov.com/
+PollingAgencies,FiveThirtyEight,https://fivethirtyeight.com/
+PollingAgencies,Morning Consult,https://morningconsult.com/
+PollingAgencies,Survation,https://www.survation.com/
+PollingAgencies,ICM Research,https://www.icmunlimited.com/
+PollingAgencies,NORC at the University of Chicago,https://www.norc.org/
+PollingAgencies,Edelman Trust Barometer,https://www.edelman.com/trust-barometer
+Pizza,Domino's,https://www.dominos.com/
+Pizza,Pizza Hut,https://www.pizzahut.com/
+Pizza,Little Caesars,https://www.littlecaesars.com/
+Pizza,Papa John's,https://www.papajohns.com/
+Pizza,Marco's Pizza,https://www.marcos.com/
+Pizza,Cici's Pizza,https://www.cicis.com/
+Pizza,California Pizza Kitchen,https://www.cpk.com/
+Pizza,Blaze Pizza,https://www.blazepizza.com/
+Pizza,MOD Pizza,https://www.modpizza.com/
+Pizza,Jet's Pizza,https://www.jetspizza.com/
 Publishing,Penguin Random House,https://www.penguinrandomhouse.com/
 Publishing,HarperCollins,https://www.harpercollins.com/
 Publishing,Simon & Schuster,https://www.simonandschuster.com/
@@ -168,6 +257,16 @@ Synthesizers,Arturia,https://www.arturia.com/
 Synthesizers,,https://www.elektron.se/
 Synthesizers,Sequential,https://www.sequential.com/
 Synthesizers,Novation,https://novationmusic.com/
+TradingCardRetailers,TCGPlayer,https://www.tcgplayer.com/
+TradingCardRetailers,Card Kingdom,https://www.cardkingdom.com/
+TradingCardRetailers,ChannelFireball,https://www.channelfireball.com/
+TradingCardRetailers,Star City Games,https://www.starcitygames.com/
+TradingCardRetailers,Collector's Cache,https://www.collectorscache.com/
+TradingCardRetailers,Potomac Distribution,https://www.potomacdist.com/
+TradingCardRetailers,Miniature Market,https://www.miniaturemarket.com/
+TradingCardRetailers,Cool Stuff Inc.,https://www.coolstuffinc.com/
+TradingCardRetailers,Magic Madhouse,https://www.magicmadhouse.co.uk/
+TradingCardRetailers,Hill's Wholesale Gaming,https://www.wholesalegaming.com/
 Toys,Mattel,https://www.mattel.com/
 Toys,Hasbro,https://hasbro.com/
 Toys,LEGO,https://www.lego.com/

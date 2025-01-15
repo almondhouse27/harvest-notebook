@@ -1,4 +1,4 @@
-import glob
+import glob as blob
 import logging
 import os
 import shutil
@@ -55,8 +55,8 @@ def stitch_chunks(output_dir):
     website_words_output_file = os.path.join(output_dir, "website_words.csv")
     site_specifications_output_file = os.path.join(output_dir, "site_specifications.csv")
 
-    website_words_chunk_files = glob.glob(os.path.join(raw_dir, "website_words_chunk_*.csv"))
-    site_specifications_chunk_files = glob.glob(os.path.join(raw_dir, "site_specifications_chunk_*.csv"))
+    website_words_chunk_files = blob.glob(os.path.join(raw_dir, "website_words_chunk_*.csv"))
+    site_specifications_chunk_files = blob.glob(os.path.join(raw_dir, "site_specifications_chunk_*.csv"))
     
     website_words_chunk_files.sort()
     site_specifications_chunk_files.sort()
@@ -79,24 +79,28 @@ def stitch_chunks(output_dir):
     print(f"Raw directory and files removed: {raw_dir}")
 
 
-def sort_outputs(output_dir):
-    csv_files = glob.glob(os.path.join(output_dir, "*.csv"))
+def basic_report_processing(output_dir):
+    csv_files = blob.glob(os.path.join(output_dir, "*.csv"))
 
     if not csv_files:
-        logging.info(f"No CSV files found in {output_dir}.")
+        logging.info(f"No CSV files found in {output_dir}. How did you manage to get here?")
         print(f"No CSV files found in {output_dir}.")
         return
 
     for file in csv_files:
         try:
             df = pd.read_csv(file)
-            sort_columns = df.columns[:2] if len(df.columns) > 1 else df.columns[:1]
-            sorted_df = df.sort_values(by=sort_columns.tolist(), kind="mergesort")
-            sorted_df.to_csv(file, index=False)
-            logging.info(f"Sorted and saved file: {file}")
-            print(f"Sorted and saved file: {file}")
+            #df = df.applymap(lambda x: x.strip() if isinstance(x, str) else x)
+            df = df.apply(lambda col: col.map(lambda x: x.strip() if isinstance(x, str) else x))
+            sort = df.columns[:2] if len(df.columns) > 1 else df.columns[:1]
+            df = df.sort_values(by=sort.tolist(), kind="mergesort")
+            df.to_csv(file, index=False)
+            logging.info(f"Basic report processing complete for file: {file}")
+            print(f"Basic report processing complete for file: {file}")
 
         except Exception as e:
             logging.error(f"Error processing file {file}: {e}")
-            print(f"Error processing file {file}: {e}")
 
+
+def advanced_report_processing(output_dir):
+    print("Advanced Report Processing")
