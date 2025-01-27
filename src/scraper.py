@@ -9,13 +9,13 @@ from src.permission import robot_handshake
 from src.output import intermediate_save
 
 
-DELAY = .5
-TIMEOUT = 20
+DELAY = .4
+TIMEOUT = 15
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Gecko/20100101 Firefox/89.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-    "HarvestNotebook/1.0 (Windows NT 10.0; Win64; x64)"
+    "HarvestNotebook/1.0 (Windows NT 10.0; Win64; x64) AlmondAnalytics/11.27.89 (AHP) Chrome/91.0.4472.124 Safari/537.36",
 ]
 PROXIES = [
     # "http://proxy1.example.com:8080",
@@ -23,7 +23,7 @@ PROXIES = [
     # "http://proxy3.example.com:8080",
     # "http://proxy4.example.com:8080",
 ]
-CHUNK = 5
+CHUNK = 10
 
 
 def harvest(df, output_dir):

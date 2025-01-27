@@ -50,10 +50,10 @@ def intermediate_save(data, chunk_count, output_dir, data_type):
     data.clear()
 
 
-def stitch_chunks(output_dir):
+def stitch_chunks(output_dir, WORD, SPEC):
     raw_dir = os.path.join(output_dir, "raw")
-    website_words_output_file = os.path.join(output_dir, "website_words.csv")
-    site_specifications_output_file = os.path.join(output_dir, "site_specifications.csv")
+    website_words_output_file = os.path.join(output_dir, WORD)
+    site_specifications_output_file = os.path.join(output_dir, SPEC)
 
     website_words_chunk_files = blob.glob(os.path.join(raw_dir, "website_words_chunk_*.csv"))
     site_specifications_chunk_files = blob.glob(os.path.join(raw_dir, "site_specifications_chunk_*.csv"))
@@ -102,5 +102,14 @@ def basic_report_processing(output_dir):
             logging.error(f"Error processing file {file}: {e}")
 
 
-def advanced_report_processing(output_dir):
-    print("Advanced Report Processing")
+def clean_log(clean_summary, output_dir):
+    summary = os.path.join(output_dir, "clean.log")
+
+    try:
+        with open(summary, 'w') as file:
+            file.write(clean_summary)
+        print(f"Clean summary saved to {summary}")
+        
+    except Exception as e:
+        print(f"Error saving clean summary to {summary}: {e}")
+    

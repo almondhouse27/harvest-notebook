@@ -62,18 +62,20 @@ def process_diagnostic_log(LOG, ARCHIVE, output_dir):
         )
 
         diagnostic_log_data = {
-            "StartTime": start_time,
-            "EndTime": end_time,
-            "Duration": total_duration,
-            "UrlsAttempted": len(urls_attempted),
-            "UrlsSkipped": len(urls_skipped),
-            "AvgUrlProcessDuration": avg_url_process_duration,
-            "TimedOutCount": timed_out_count,
-            "ConnectionRetryCount": connection_retry_count,
-            "InfoCount": info_count,
-            "DebugCount": debug_count,
-            "WarningCount": warning_count,
-            "ErrorCount": error_count,
+            "Log":{
+                "StartTime": start_time,
+                "EndTime": end_time,
+                "Duration": total_duration,
+                "UrlsAttempted": len(urls_attempted),
+                "UrlsSkipped": len(urls_skipped),
+                "AvgUrlProcessDuration": avg_url_process_duration,
+                "TimedOutCount": timed_out_count,
+                "ConnectionRetryCount": connection_retry_count,
+                "InfoCount": info_count,
+                "DebugCount": debug_count,
+                "WarningCount": warning_count,
+                "ErrorCount": error_count,
+            }
         }
 
         output_file = os.path.join(output_dir, 'diagnostic_log.json')
@@ -83,8 +85,12 @@ def process_diagnostic_log(LOG, ARCHIVE, output_dir):
         logging.info(f"Scraping report generated and saved to {output_file}")
         logging.info(f"Log file archived and clearing.")
 
-        shutil.copy(LOG, ARCHIVE)
+        with open(LOG, 'r') as log_file:
+            with open(ARCHIVE, 'a') as archive_file:
+                archive_file.write(log_file.read())
+
         transfer_app_log(LOG, output_dir)
+        
         with open(LOG, 'w'):
             pass
 

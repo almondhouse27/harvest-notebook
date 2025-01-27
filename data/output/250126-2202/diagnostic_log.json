@@ -1,0 +1,16 @@
+{
+    "Log": {
+        "StartTime": "2025-01-26 22:01:59,711",
+        "EndTime": "2025-01-26 22:02:45,971",
+        "Duration": 46.26,
+        "UrlsAttempted": 19,
+        "UrlsSkipped": 4,
+        "AvgUrlProcessDuration": 2.37,
+        "TimedOutCount": 0,
+        "ConnectionRetryCount": 0,
+        "InfoCount": 63,
+        "DebugCount": 80,
+        "WarningCount": 4,
+        "ErrorCount": 5
+    }
+}

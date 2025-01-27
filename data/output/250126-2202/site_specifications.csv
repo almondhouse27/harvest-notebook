@@ -1,0 +1,15 @@
+Category,Name,Url,WordCount,ScriptCount,StylesheetCount,LinkCount,FormCount,ImageCount,VideoCount,IframeCount,MetaDescription,Title,CookieStatus
+Computers,AMD,https://www.amd.com/,1963,9,6,388,0,52,0,0,"AMD ofrece soluciones informÃ¡ticas adaptables y de alto rendimiento lÃ­deres para mejorar la IA del centro de datos, las PC con IA, los dispositivos perimetrales inteligentes, la experiencia de juego y mucho mÃ¡s.",AMD × together we advance_AI,No
+Computers,Acer,https://www.acer.com/,624,21,4,273,0,41,1,1,"Adquiera los productos más recientes de Acer, desde Chromebooks, laptops, monitores, computadoras de escritorio hasta proyectores para oficina, hogar y entretenimiento.","Laptops, computadoras de escritorio, Chromebooks, monitores y proyectores Acer | Acer México",No
+Computers,Apple,https://www.apple.com/,1013,17,7,125,1,0,1,0,,Apple,No
+Computers,Asus,https://www.asus.com/,297,28,14,103,0,27,0,1,"Driven by innovation & committed to quality, ASUS has a wide selection of best in class products. Find & buy a laptop, phone, router, monitor, motherboard & more",ASUS Global,No
+Computers,HP,https://www.hp.com/,1300,15,10,452,0,12,0,1,"Vea información sobre impresoras, laptops, desktops y mucho más en el sitio web oficial de HP®","Computadoras Laptops, Desktops, Impresoras, Consumibles, Tintas & Toner  | HP® México",No
+Computers,Lenovo,https://www.lenovo.com/,1851,44,11,279,1,86,0,1,"Explora la mejor tecnología del mercado con nuestras laptops, computadoras, tablets, celulares, accesorios y más. ¡Arma tu PC perfecta! ☎ 52-55-5798-9520","Tienda oficial Lenovo: Laptops, PCs y Tablets | Lenovo México",No
+Software,GitHub,https://github.com/,1487,61,21,132,5,54,2,0,"GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million projects.","GitHub · Build and ship software on a single, collaborative platform · GitHub",No
+Software,Go,https://go.dev/,1089,12,2,142,0,52,0,1,"Go is an open source programming language that makes it simple to build secure, scalable systems.",The Go Programming Language,No
+Software,Jupyter,https://jupyter.org/,484,2,2,67,0,50,0,0,"The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media.",Project Jupyter | Home,No
+Software,Laravel,https://laravel.com/,2594,9,2,201,0,80,0,0,"Laravel is a PHP web application framework with expressive, elegant syntax. We’ve already laid the foundation — freeing you to create without sweating the small things.",Laravel - The PHP Framework For Web Artisans,No
+Software,Node.js,https://nodejs.org/en,215,48,6,28,0,0,0,0,Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.,Node.js — Run JavaScript Everywhere,No
+Software,PHP,https://php.net/,2907,8,5,257,1,4,0,0,,PHP: Hypertext Preprocessor,No
+Software,Packagist,https://packagist.org/,396,3,1,33,2,4,0,0,The PHP Package Repository,Packagist,No
+Software,Python,https://www.python.org/,1021,14,4,206,1,1,0,0,The official home of the Python Programming Language,Welcome to Python.org,No

@@ -1,0 +1,154 @@
+2025-01-26 22:01:59,711 - INFO - >======================================================>
+2025-01-26 22:01:59,711 - INFO - Logging setup complete. Logs will be saved to data\log\app.log.
+2025-01-26 22:02:01,353 - INFO - Dependencies installed successfully!
+2025-01-26 22:02:01,368 - INFO - CSV file data\input\data.csv read successfully.
+2025-01-26 22:02:01,397 - INFO - Output directory created: data\output\250126-2202
+2025-01-26 22:02:01,404 - INFO - [1/19] Processing https://www.dell.com/ (Category: Computers, Name: Dell)
+2025-01-26 22:02:01,407 - DEBUG - Starting new HTTPS connection (1): www.dell.com:443
+2025-01-26 22:02:01,856 - DEBUG - https://www.dell.com:443 "GET /robots.txt HTTP/1.1" 403 378
+2025-01-26 22:02:01,857 - ERROR - Error fetching robots.txt from https://www.dell.com/robots.txt: 403 Client Error: Forbidden for url: https://www.dell.com/robots.txt
+2025-01-26 22:02:01,857 - WARNING - Skipping https://www.dell.com/ due to robots.txt restrictions.
+2025-01-26 22:02:02,258 - INFO - [2/19] Processing https://www.lenovo.com/ (Category: Computers, Name: Lenovo)
+2025-01-26 22:02:02,258 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-26 22:02:02,757 - DEBUG - https://www.lenovo.com:443 "GET /robots.txt HTTP/1.1" 200 562
+2025-01-26 22:02:02,758 - INFO - Permission granted to scrape: https://www.lenovo.com/
+2025-01-26 22:02:03,159 - DEBUG - Starting new HTTPS connection (1): www.lenovo.com:443
+2025-01-26 22:02:03,453 - DEBUG - https://www.lenovo.com:443 "GET / HTTP/1.1" 301 0
+2025-01-26 22:02:03,610 - DEBUG - https://www.lenovo.com:443 "GET /mx/es/ HTTP/1.1" 200 None
+2025-01-26 22:02:03,918 - INFO - Successfully processed https://www.lenovo.com/
+2025-01-26 22:02:04,319 - INFO - [3/19] Processing https://www.hp.com/ (Category: Computers, Name: HP)
+2025-01-26 22:02:04,319 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-26 22:02:04,969 - DEBUG - https://www.hp.com:443 "GET /robots.txt HTTP/1.1" 200 1822
+2025-01-26 22:02:04,970 - INFO - Permission granted to scrape: https://www.hp.com/
+2025-01-26 22:02:05,372 - DEBUG - Starting new HTTPS connection (1): www.hp.com:443
+2025-01-26 22:02:05,688 - DEBUG - https://www.hp.com:443 "GET / HTTP/1.1" 301 239
+2025-01-26 22:02:05,691 - DEBUG - Starting new HTTPS connection (1): www-redirect.ext.hp.com:443
+2025-01-26 22:02:06,357 - DEBUG - https://www-redirect.ext.hp.com:443 "GET / HTTP/1.1" 301 0
+2025-01-26 22:02:06,357 - DEBUG - Starting new HTTPS connection (1): www8.hp.com:443
+2025-01-26 22:02:06,779 - DEBUG - https://www8.hp.com:443 "GET /mx/es/home.html HTTP/1.1" 301 0
+2025-01-26 22:02:07,006 - DEBUG - https://www.hp.com:443 "GET /mx-es/home.html HTTP/1.1" 200 None
+2025-01-26 22:02:07,385 - INFO - Successfully processed https://www.hp.com/
+2025-01-26 22:02:07,786 - INFO - [4/19] Processing https://www.apple.com/ (Category: Computers, Name: Apple)
+2025-01-26 22:02:07,787 - DEBUG - Starting new HTTPS connection (1): www.apple.com:443
+2025-01-26 22:02:08,228 - DEBUG - https://www.apple.com:443 "GET /robots.txt HTTP/1.1" 200 384
+2025-01-26 22:02:08,228 - INFO - Permission granted to scrape: https://www.apple.com/
+2025-01-26 22:02:08,634 - DEBUG - Starting new HTTPS connection (1): www.apple.com:443
+2025-01-26 22:02:08,917 - DEBUG - https://www.apple.com:443 "GET / HTTP/1.1" 200 41030
+2025-01-26 22:02:09,062 - INFO - Successfully processed https://www.apple.com/
+2025-01-26 22:02:09,466 - INFO - [5/19] Processing https://www.asus.com/ (Category: Computers, Name: Asus)
+2025-01-26 22:02:09,468 - DEBUG - Starting new HTTPS connection (1): www.asus.com:443
+2025-01-26 22:02:09,852 - DEBUG - https://www.asus.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:09,853 - INFO - Permission granted to scrape: https://www.asus.com/
+2025-01-26 22:02:10,254 - DEBUG - Starting new HTTPS connection (1): www.asus.com:443
+2025-01-26 22:02:10,530 - DEBUG - https://www.asus.com:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:10,673 - INFO - Successfully processed https://www.asus.com/
+2025-01-26 22:02:11,075 - INFO - [6/19] Processing https://www.acer.com/ (Category: Computers, Name: Acer)
+2025-01-26 22:02:11,075 - DEBUG - Starting new HTTPS connection (1): www.acer.com:443
+2025-01-26 22:02:11,767 - DEBUG - https://www.acer.com:443 "GET /robots.txt HTTP/1.1" 200 457
+2025-01-26 22:02:11,768 - INFO - Permission granted to scrape: https://www.acer.com/
+2025-01-26 22:02:12,170 - DEBUG - Starting new HTTPS connection (1): www.acer.com:443
+2025-01-26 22:02:21,435 - DEBUG - https://www.acer.com:443 "GET / HTTP/1.1" 301 0
+2025-01-26 22:02:21,542 - DEBUG - https://www.acer.com:443 "GET /mx-es/ HTTP/1.1" 200 None
+2025-01-26 22:02:21,720 - INFO - Successfully processed https://www.acer.com/
+2025-01-26 22:02:22,122 - INFO - [7/19] Processing https://www.msi.com/ (Category: Computers, Name: MSI)
+2025-01-26 22:02:22,122 - DEBUG - Starting new HTTPS connection (1): www.msi.com:443
+2025-01-26 22:02:22,649 - DEBUG - https://www.msi.com:443 "GET /robots.txt HTTP/1.1" 403 377
+2025-01-26 22:02:22,650 - ERROR - Error fetching robots.txt from https://www.msi.com/robots.txt: 403 Client Error: Forbidden for url: https://www.msi.com/robots.txt
+2025-01-26 22:02:22,650 - WARNING - Skipping https://www.msi.com/ due to robots.txt restrictions.
+2025-01-26 22:02:23,051 - INFO - [8/19] Processing https://www.intel.com/ (Category: Computers, Name: Intel)
+2025-01-26 22:02:23,052 - DEBUG - Starting new HTTPS connection (1): www.intel.com:443
+2025-01-26 22:02:23,518 - DEBUG - https://www.intel.com:443 "GET /robots.txt HTTP/1.1" 403 381
+2025-01-26 22:02:23,519 - ERROR - Error fetching robots.txt from https://www.intel.com/robots.txt: 403 Client Error: Forbidden for url: https://www.intel.com/robots.txt
+2025-01-26 22:02:23,519 - WARNING - Skipping https://www.intel.com/ due to robots.txt restrictions.
+2025-01-26 22:02:23,920 - INFO - [9/19] Processing https://www.amd.com/ (Category: Computers, Name: AMD)
+2025-01-26 22:02:23,920 - DEBUG - Starting new HTTPS connection (1): www.amd.com:443
+2025-01-26 22:02:24,314 - DEBUG - https://www.amd.com:443 "GET /robots.txt HTTP/1.1" 200 980
+2025-01-26 22:02:24,315 - INFO - Permission granted to scrape: https://www.amd.com/
+2025-01-26 22:02:24,718 - DEBUG - Starting new HTTPS connection (1): www.amd.com:443
+2025-01-26 22:02:24,985 - DEBUG - https://www.amd.com:443 "GET / HTTP/1.1" 301 0
+2025-01-26 22:02:25,082 - DEBUG - https://www.amd.com:443 "GET /es.html HTTP/1.1" 200 28079
+2025-01-26 22:02:25,394 - INFO - Successfully processed https://www.amd.com/
+2025-01-26 22:02:25,797 - INFO - [10/19] Processing https://www.python.org/ (Category: Software, Name: Python)
+2025-01-26 22:02:25,797 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-26 22:02:26,251 - DEBUG - https://www.python.org:443 "GET /robots.txt HTTP/1.1" 200 297
+2025-01-26 22:02:26,251 - INFO - Permission granted to scrape: https://www.python.org/
+2025-01-26 22:02:26,652 - DEBUG - Starting new HTTPS connection (1): www.python.org:443
+2025-01-26 22:02:26,979 - DEBUG - https://www.python.org:443 "GET / HTTP/1.1" 200 11542
+2025-01-26 22:02:27,024 - INFO - Successfully processed https://www.python.org/
+2025-01-26 22:02:27,029 - INFO - Saved chunk 1 with 3196 rows to data\output\250126-2202\raw\website_words_chunk_1.csv
+2025-01-26 22:02:27,029 - INFO - Saved chunk 1 with 7 rows to data\output\250126-2202\raw\site_specifications_chunk_1.csv
+2025-01-26 22:02:27,434 - INFO - [11/19] Processing https://jupyter.org/ (Category: Software, Name: Jupyter)
+2025-01-26 22:02:27,434 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-26 22:02:27,865 - DEBUG - https://jupyter.org:443 "GET /robots.txt HTTP/1.1" 200 66
+2025-01-26 22:02:27,865 - INFO - Permission granted to scrape: https://jupyter.org/
+2025-01-26 22:02:28,266 - DEBUG - Starting new HTTPS connection (1): jupyter.org:443
+2025-01-26 22:02:28,628 - DEBUG - https://jupyter.org:443 "GET / HTTP/1.1" 200 5013
+2025-01-26 22:02:28,649 - INFO - Successfully processed https://jupyter.org/
+2025-01-26 22:02:29,050 - INFO - [12/19] Processing https://vuejs.org/ (Category: Software, Name: Vue.js)
+2025-01-26 22:02:29,050 - DEBUG - Starting new HTTPS connection (1): vuejs.org:443
+2025-01-26 22:02:29,562 - DEBUG - https://vuejs.org:443 "GET /robots.txt HTTP/1.1" 404 6294
+2025-01-26 22:02:29,568 - ERROR - Error fetching robots.txt from https://vuejs.org/robots.txt: 404 Client Error: Not Found for url: https://vuejs.org/robots.txt
+2025-01-26 22:02:29,569 - WARNING - Skipping https://vuejs.org/ due to robots.txt restrictions.
+2025-01-26 22:02:29,969 - INFO - [13/19] Processing https://nodejs.org/en (Category: Software, Name: Node.js)
+2025-01-26 22:02:29,969 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-26 22:02:30,488 - DEBUG - https://nodejs.org:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:30,499 - INFO - Permission granted to scrape: https://nodejs.org/en
+2025-01-26 22:02:30,899 - DEBUG - Starting new HTTPS connection (1): nodejs.org:443
+2025-01-26 22:02:31,356 - DEBUG - https://nodejs.org:443 "GET /en HTTP/1.1" 200 None
+2025-01-26 22:02:31,397 - INFO - Successfully processed https://nodejs.org/en
+2025-01-26 22:02:31,798 - INFO - [14/19] Processing https://laravel.com/ (Category: Software, Name: Laravel)
+2025-01-26 22:02:31,798 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-26 22:02:32,278 - DEBUG - https://laravel.com:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:32,278 - INFO - Permission granted to scrape: https://laravel.com/
+2025-01-26 22:02:32,686 - DEBUG - Starting new HTTPS connection (1): laravel.com:443
+2025-01-26 22:02:33,029 - DEBUG - https://laravel.com:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:33,157 - INFO - Successfully processed https://laravel.com/
+2025-01-26 22:02:33,558 - INFO - [15/19] Processing https://php.net/ (Category: Software, Name: PHP)
+2025-01-26 22:02:33,558 - DEBUG - Starting new HTTPS connection (1): php.net:443
+2025-01-26 22:02:34,654 - DEBUG - https://php.net:443 "GET /robots.txt HTTP/1.1" 301 161
+2025-01-26 22:02:34,655 - DEBUG - Starting new HTTPS connection (1): www.php.net:443
+2025-01-26 22:02:35,387 - DEBUG - https://www.php.net:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:35,388 - INFO - Permission granted to scrape: https://php.net/
+2025-01-26 22:02:35,789 - DEBUG - Starting new HTTPS connection (1): php.net:443
+2025-01-26 22:02:36,728 - DEBUG - https://php.net:443 "GET / HTTP/1.1" 301 161
+2025-01-26 22:02:36,729 - DEBUG - Starting new HTTPS connection (1): www.php.net:443
+2025-01-26 22:02:37,297 - DEBUG - https://www.php.net:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:37,339 - INFO - Successfully processed https://php.net/
+2025-01-26 22:02:37,743 - INFO - [16/19] Processing https://packagist.org/ (Category: Software, Name: Packagist)
+2025-01-26 22:02:37,745 - DEBUG - Starting new HTTPS connection (1): packagist.org:443
+2025-01-26 22:02:38,526 - DEBUG - https://packagist.org:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:38,526 - INFO - Permission granted to scrape: https://packagist.org/
+2025-01-26 22:02:38,929 - DEBUG - Starting new HTTPS connection (1): packagist.org:443
+2025-01-26 22:02:39,470 - DEBUG - https://packagist.org:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:39,482 - INFO - Successfully processed https://packagist.org/
+2025-01-26 22:02:39,883 - INFO - [17/19] Processing https://www.mysql.com/ (Category: Software, Name: MySQL)
+2025-01-26 22:02:39,884 - DEBUG - Starting new HTTPS connection (1): www.mysql.com:443
+2025-01-26 22:02:40,823 - DEBUG - https://www.mysql.com:443 "GET /robots.txt HTTP/1.1" 200 149
+2025-01-26 22:02:40,824 - INFO - Permission granted to scrape: https://www.mysql.com/
+2025-01-26 22:02:41,226 - DEBUG - Starting new HTTPS connection (1): www.mysql.com:443
+2025-01-26 22:02:41,523 - DEBUG - https://www.mysql.com:443 "GET / HTTP/1.1" 403 4473
+2025-01-26 22:02:41,524 - ERROR - Request error for https://www.mysql.com/: 403 Client Error: Forbidden for url: https://www.mysql.com/
+2025-01-26 22:02:41,924 - INFO - [18/19] Processing https://github.com/ (Category: Software, Name: GitHub)
+2025-01-26 22:02:41,924 - DEBUG - Starting new HTTPS connection (1): github.com:443
+2025-01-26 22:02:42,468 - DEBUG - https://github.com:443 "GET /robots.txt HTTP/1.1" 200 556
+2025-01-26 22:02:42,469 - INFO - Permission granted to scrape: https://github.com/
+2025-01-26 22:02:42,870 - DEBUG - Starting new HTTPS connection (1): github.com:443
+2025-01-26 22:02:43,318 - DEBUG - https://github.com:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:43,675 - INFO - Successfully processed https://github.com/
+2025-01-26 22:02:44,076 - INFO - [19/19] Processing https://go.dev/ (Category: Software, Name: Go)
+2025-01-26 22:02:44,076 - DEBUG - Starting new HTTPS connection (1): go.dev:443
+2025-01-26 22:02:44,554 - DEBUG - https://go.dev:443 "GET /robots.txt HTTP/1.1" 200 None
+2025-01-26 22:02:44,554 - INFO - Permission granted to scrape: https://go.dev/
+2025-01-26 22:02:44,956 - DEBUG - Starting new HTTPS connection (1): go.dev:443
+2025-01-26 22:02:45,306 - DEBUG - https://go.dev:443 "GET / HTTP/1.1" 200 None
+2025-01-26 22:02:45,486 - INFO - Successfully processed https://go.dev/
+2025-01-26 22:02:45,486 - INFO - Saved chunk 2 with 3555 rows to data\output\250126-2202\raw\website_words_chunk_2.csv
+2025-01-26 22:02:45,503 - INFO - Saved chunk 2 with 7 rows to data\output\250126-2202\raw\site_specifications_chunk_2.csv
+2025-01-26 22:02:45,904 - INFO - Scraping completed. Compiling results into DataFrame.
+2025-01-26 22:02:45,930 - INFO - All website words chunks stitched together into data\output\250126-2202\website_words.csv
+2025-01-26 22:02:45,930 - INFO - All site specifications chunks stitched together into data\output\250126-2202\site_specifications.csv
+2025-01-26 22:02:45,935 - INFO - Raw directory and files removed: data\output\250126-2202\raw
+2025-01-26 22:02:45,946 - INFO - Basic report processing complete for file: data\output\250126-2202\site_specifications.csv
+2025-01-26 22:02:45,971 - INFO - Basic report processing complete for file: data\output\250126-2202\website_words.csv
+2025-01-26 22:02:45,978 - INFO - Scraping report generated and saved to data\output\250126-2202\diagnostic_log.json
+2025-01-26 22:02:45,978 - INFO - Log file archived and clearing.

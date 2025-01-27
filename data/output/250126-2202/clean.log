@@ -1,0 +1,40 @@
+Missing Data Summary
+---------------------
+Total Missing Values: 0
+
+No columns with missing values.
+
+Missing Values Per Column:
+Category       : 0
+Name           : 0
+Url            : 0
+
+Missing Url Rows Removed
+---------------------
+Empty DataFrame
+Columns: [Category, Name, Url]
+Index: []
+---------------------
+
+*Replaced all missing Category and Name values with 'Unavailable'
+
+Missing Data Summary
+---------------------
+Total Missing Values: 0
+
+No columns with missing values.
+
+Missing Values Per Column:
+Category       : 0
+Name           : 0
+Url            : 0
+
+Duplicate Url Rows Removed
+---------------------
+Empty DataFrame
+Columns: [Category, Name, Url]
+Index: []
+---------------------
+
+*Removed all duplicate URLs, keeping the first occurrence
+
