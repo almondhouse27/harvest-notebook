@@ -4,27 +4,37 @@ Developed by David Blessent
 
 almondhouse27/harvest-notebook
 
-### Requirements
+## Requirements
 
-*Python*
-[Download Python](https://www.python.org/downloads/)
+**Python**
 
-*Jupyter Notebooks*
+[Python 3 Documentation](https://docs.python.org/3/)
+
+[python.org/downloads](https://www.python.org/downloads/)
+
+**Platform**
+
+[Jupyter Documentation](https://docs.jupyter.org/en/latest/)
+
 ```shell
 pip install notebook
 ```
 
-*Pandas*
+**Libraries**
+
+[Pandas Documentation](https://pandas.pydata.org/docs/)
+
 ```shell
 pip install pandas
 ```
 
-*Beautiful Soup*
+[Beautiful Soup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
 ```shell
 pip install beautifulsoup4
 ```
 
-### Input
+## Input
 
 To use the *Harvest Notebook* provide a list of URLs in the `data/input/url-list.csv` file.
 
@@ -34,8 +44,7 @@ There is also an option `To read URLs directly from code`.
 
 To use this, make sure to comment out the cell `To read URL list from input file`.
 
-
-### Output
+## Output
 
 *Harvest Notebook* generates several output files in the `data/output` directory.
 
