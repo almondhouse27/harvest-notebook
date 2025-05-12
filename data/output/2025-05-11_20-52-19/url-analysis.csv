@@ -1,0 +1,19 @@
+url,title,total_word_count,unique_word_count,response_time,stylesheet_count,script_count,link_count
+https://www.azstateparks.com,Arizona State Parks & Trails,1127,428,1.643946886062622,4,10,184
+https://www.dcnr.pa.gov/StateParks,Department of Conservation and Natural Resources | Department of Conservation and Natural Resources| Commonwealth of Pennsylvania,808,415,0.7446424961090088,5,23,207
+https://www.dnr.illinois.gov/parks,State Parks & Outdoor Recreation,627,366,0.46753931045532227,5,9,144
+https://www.dnr.state.mn.us/state_parks,Minnesota State Parks and Recreation Areas | Minnesota DNR,456,286,0.24773907661437988,9,42,153
+https://www.floridastateparks.org,Home | Florida State Parks,639,375,0.3932018280029297,3,6,74
+https://www.fs.usda.gov,Home | US Forest Service,1000,497,0.5528967380523682,34,13,117
+https://www.harvard.edu,Harvard University,2336,1120,0.19977259635925293,5,18,191
+https://www.mit.edu,MIT - Massachusetts Institute of Technology,366,271,0.39466118812561035,1,5,61
+https://www.nps.gov,NPS.gov Homepage (U.S. National Park Service),752,477,0.23212790489196777,5,22,263
+https://www.parks.ca.gov,California State Parks,636,372,0.5184934139251709,15,24,120
+https://www.parks.wa.gov,Home | Washington State Parks,776,377,0.1886277198791504,96,83,56
+https://www.princeton.edu,Home | Princeton University,1418,838,0.2872309684753418,3,6,142
+https://www.stanford.edu,Stanford University,700,425,0.22884154319763184,6,14,107
+https://www.tpwd.texas.gov/state-parks,Texas State Parks - TPWD,1051,516,1.1062333583831787,8,16,201
+https://www.ucla.edu,A World Leader in Education and Research Excellence | UCLA,1875,1007,0.43039751052856445,3,16,193
+https://www.umich.edu,University of Michigan,645,434,0.7695140838623047,6,11,78
+https://www.utexas.edu,Home | University of Texas at Austin,1050,576,0.09090590476989746,2,8,116
+https://www.yale.edu,Yale University,702,441,0.20360016822814941,12,18,109
