@@ -14,7 +14,7 @@ STOPWORDS = set([
 ])
 
 
-def harvest_url(url):
+def url_analysis(url):
 
     try:
 
@@ -67,7 +67,7 @@ def harvest_url(url):
         }
     
 
-def extract_word_counts(url):
+def website_words(url):
 
     try:
 
